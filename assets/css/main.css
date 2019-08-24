@@ -926,7 +926,7 @@
 				display: block;
 				margin: 0 auto;
 				border-radius: 100%;
-				box-shadow: 0 0 0 1.5em #212121;
+				box-shadow: 0 0 0 1.5em #263238;
 			}
 
 			#main .avatar:before {
@@ -938,7 +938,7 @@
 				width: calc(100% + 6em);
 				height: 1px;
 				z-index: -1;
-				background: #263238;
+				background: #18ffff;
 			}
 
 		@media screen and (max-width: 480px) {
