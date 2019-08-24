@@ -770,6 +770,7 @@
 				}
 
 				ul.icons li a:hover:before {
+					color: #18ffff;
 					text-shadow: 1.25px 0px 0px #18ffff, -1.25px 0px 0px #18ffff, 0px 1.25px 0px #18ffff, 0px -1.25px 0px #18ffff;
 				}
 
@@ -787,6 +788,7 @@
 
 				ul.icons li a:hover {
 					border-color: #18ffff;
+					color: #18ffff;
 				}
 
 		@media screen and (max-width: 480px) {
