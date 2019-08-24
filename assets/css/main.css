@@ -143,7 +143,7 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #414f57;
+		color: #c8cccf;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 14pt;
 		font-weight: 300;
@@ -190,7 +190,7 @@
 		}
 
 	strong, b {
-		color: #313f47;
+		color: #c8cccf;
 	}
 
 	em, i {
@@ -202,7 +202,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #313f47;
+		color: #c8cccf;
 		line-height: 1.5;
 		margin: 0 0 0.75em 0;
 	}
@@ -395,7 +395,7 @@
 
 		select option {
 			color: #313f47;
-			background: #ffffff;
+			background: #c8cccf;
 		}
 
 		select:focus::-ms-value {
@@ -543,7 +543,7 @@
 		}
 
 		.icon.solid:before {
-			font-weight: 900;
+			font-weight: 400;
 		}
 
 		.icon.brands:before {
@@ -727,7 +727,7 @@
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding-left: 0;
+		padding: 0.5em 0.5em 0.5em 0.5em;
 		margin-top: -0.675em;
 	}
 
@@ -740,14 +740,14 @@
 				text-decoration: none;
 				position: relative;
 				display: block;
-				width: 3.75em;
-				height: 3.75em;
+				width: 5em;
+				height: 5em;
 				border-radius: 100%;
 				border: solid 1px #c8cccf;
-				line-height: 3.75em;
+				line-height: 5em;
 				overflow: hidden;
 				text-align: center;
-				text-indent: 3.75em;
+				text-indent: 5em;
 				white-space: nowrap;
 			}
 
@@ -765,7 +765,7 @@
 				}
 
 				ul.icons li a:before {
-					color: #ffffff;
+					color: #c8cccf;
 					text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
 				}
 
@@ -779,7 +779,7 @@
 					left: 0;
 					width: inherit;
 					height: inherit;
-					font-size: 1.85rem;
+					font-size: 3rem;
 					line-height: inherit;
 					text-align: center;
 					text-indent: 0;
@@ -792,7 +792,7 @@
 		@media screen and (max-width: 480px) {
 
 			ul.icons li a:before {
-				font-size: 1.5rem;
+				font-size: 3rem;
 			}
 
 		}
@@ -819,7 +819,7 @@
 		background-color: transparent;
 		border-radius: 4px;
 		border: solid 1px #c8cccf;
-		color: #414f57 !important;
+		color: #263238 !important;
 		cursor: pointer;
 		text-align: center;
 		text-decoration: none;
@@ -924,7 +924,7 @@
 				display: block;
 				margin: 0 auto;
 				border-radius: 100%;
-				box-shadow: 0 0 0 1.5em #ffffff;
+				box-shadow: 0 0 0 1.5em #212121;
 			}
 
 			#main .avatar:before {
@@ -936,7 +936,7 @@
 				width: calc(100% + 6em);
 				height: 1px;
 				z-index: -1;
-				background: #c8cccf;
+				background: #263238;
 			}
 
 		@media screen and (max-width: 480px) {
@@ -969,7 +969,7 @@
 		-ms-align-self: -ms-flex-end;
 		align-self: flex-end;
 		width: 100%;
-		padding: 1.5em 0 0 0;
+		padding: 1em 0 0 0;
 		color: rgba(255, 255, 255, 0.75);
 		cursor: default;
 		text-align: center;
