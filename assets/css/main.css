@@ -215,7 +215,7 @@
 	h1 {
 		font-size: 1.85em;
 		letter-spacing: 0.22em;
-		margin: 1.5em 0 0.525em 0;
+		margin: 0 0 0.525em 0;
 	}
 
 	h2 {
@@ -528,7 +528,7 @@
 			font-style: normal;
 			font-variant: normal;
 			text-rendering: auto;
-			line-height: 3em;
+			line-height: 1;
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
@@ -543,7 +543,7 @@
 		}
 
 		.icon.solid:before {
-			font-weight: 400;
+			font-weight: 900;
 		}
 
 		.icon.brands:before {
@@ -727,7 +727,7 @@
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding: 0.5em 0.5em 0.5em 0.5em;
+		padding-left: 0;
 		margin-top: -0.675em;
 	}
 
@@ -740,14 +740,14 @@
 				text-decoration: none;
 				position: relative;
 				display: block;
-				width: 5rem;
-				height: 5rem;
+				width: 3.75rem;
+				height: 3.75rem;
 				border-radius: 100%;
-				border: solid 0.5px #c8cccf;
-				line-height: 5rem;
+				border: solid 1px #c8cccf;
+				line-height: 3.75rem;
 				overflow: hidden;
 				text-align: center;
-				text-indent: 5rem;
+				text-indent: 3.75rem;
 				white-space: nowrap;
 			}
 
@@ -766,12 +766,10 @@
 
 				ul.icons li a:before {
 					color: #c8cccf;
-					text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
 				}
 
 				ul.icons li a:hover:before {
 					color: #18ffff;
-					text-shadow: 1.25px 0px 0px #18ffff, -1.25px 0px 0px #18ffff, 0px 1.25px 0px #18ffff, 0px -1.25px 0px #18ffff;
 				}
 
 				ul.icons li a:before {
@@ -780,7 +778,7 @@
 					left: 0;
 					width: inherit;
 					height: inherit;
-					font-size: 3rem;
+					font-size: 1.85rem;
 					line-height: inherit;
 					text-align: center;
 					text-indent: 0;
@@ -788,13 +786,12 @@
 
 				ul.icons li a:hover {
 					border-color: #18ffff;
-					color: #18ffff;
 				}
 
 		@media screen and (max-width: 480px) {
 
 			ul.icons li a:before {
-				font-size: 3rem;
+				font-size: 1.5rem;
 			}
 
 		}
@@ -815,8 +812,8 @@
 		-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		display: inline-block;
-		height: 3em;
-		line-height: 3em;
+		height: 2.75em;
+		line-height: 2.75em;
 		padding: 0 1.5em;
 		background-color: transparent;
 		border-radius: 4px;
