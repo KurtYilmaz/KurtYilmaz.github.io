@@ -12,9 +12,11 @@
  */
 :root {
   --blue: #007bff;
+  --blue-dark: #1a252f;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
+  --pink-dark: #bf3b82;
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
@@ -10126,6 +10128,7 @@ a.text-dark:focus {
 
 .portfolio {
   margin-bottom: -30px;
+  background-color: var(--pink-dark);
 }
 
 .portfolio .portfolio-item {
@@ -10240,5 +10243,13 @@ form .row:first-child .floating-label-form-group {
 }
 
 .copyright {
-  background-color: #1a252f;
+  background-color: var(--secondary);
+}
+
+#contact {
+  background-color: var(--blue-dark);
+}
+
+#about {
+  background-color: var(--primary);
 }
