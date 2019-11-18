@@ -38,22 +38,25 @@
     <header
       class="masthead bg-secondary text-white text-center d-flex align-items-center"
       style="height: 100vh"
+      id="home"
     >
       <div class="container d-flex align-items-center flex-column">
         <!-- Masthead Heading -->
-        <div>
+        <div class="container">
           <h1 class="masthead-heading mb-0">
             Hi, my name is
             <span class="text-primary">Kurt Yilmaz</span>.
           </h1>
           <div class="divider-light"></div>
           <h1 class="masthead-subheading mb-4">
-            I am a recently graduated software engineer with experience in game,
-            audio, embedded, and Android development.
+            I am a recently graduated software engineer with experience in
+            audio, game, embedded, and Android development.
           </h1>
         </div>
-
-        <div class="btn btn-xl btn-outline-primary" id="btn-home">
+        <div
+          class="btn btn-xl btn-outline-primary font-weight-bold"
+          id="btn-home"
+        >
           About Me
         </div>
       </div>
@@ -61,12 +64,12 @@
 
     <!-- Navigation -->
     <nav
-      class="navbar navbar-expand-lg bg-secondary text-uppercase navbar-fixed-top"
+      class="navbar sticky-top navbar-expand-lg bg-secondary text-uppercase navbar-fixed-top"
       id="mainNav"
     >
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"
-          >Start Bootstrap</a
+          >Kurt Yilmaz</a
         >
         <button
           class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
@@ -325,7 +328,13 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+            <form
+              action="https://formspree.io/kurtyilmaz@ufl.edu"
+              method="POST"
+              name="sentMessage"
+              id="contactForm"
+              novalidate="novalidate"
+            >
               <div class="control-group">
                 <div
                   class="form-group floating-label-form-group controls mb-0 pb-2"
@@ -334,6 +343,7 @@
                   <input
                     class="form-control"
                     id="name"
+                    name="Name"
                     type="text"
                     placeholder="Name"
                     required="required"
@@ -350,6 +360,7 @@
                   <input
                     class="form-control"
                     id="email"
+                    name="Email"
                     type="email"
                     placeholder="Email Address"
                     required="required"
@@ -366,6 +377,7 @@
                   <input
                     class="form-control"
                     id="phone"
+                    name="Phone Number"
                     type="tel"
                     placeholder="Phone Number"
                     required="required"
@@ -382,6 +394,7 @@
                   <textarea
                     class="form-control"
                     id="message"
+                    name="Message"
                     rows="5"
                     placeholder="Message"
                     required="required"
@@ -395,6 +408,7 @@
               <div class="form-group">
                 <button
                   type="submit"
+                  value="Send"
                   class="btn btn-primary btn-xl"
                   id="sendMessageButton"
                 >
@@ -410,17 +424,22 @@
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
           <!-- Footer Social Icons -->
           <div class="col-lg-4 mb-5 mb-lg-0">
-            <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <a
+              class="btn btn-outline-light btn-social mx-1"
+              href="https://github.com/KurtYilmaz"
+              target="_blank"
+            >
               <i class="fab fa-fw fa-github"></i>
             </a>
-            <a class="btn btn-outline-light btn-social mx-1" href="#">
-              <i class="fab fs. Buy bea-fw fa-linkedin-in"></i>
-            </a>
-            <a class="btn btn-outline-light btn-social mx-1" href="#">
-              <i class="fab fa-fw fa-dribbble"></i>
+            <a
+              class="btn btn-outline-light btn-social mx-1"
+              href="https://www.linkedin.com/in/kurtyilmaz/"
+              target="_blank"
+            >
+              <i class="fab fa-fw fa-linkedin-in"></i>
             </a>
           </div>
         </div>
@@ -430,7 +449,7 @@
     <!-- Copyright Section -->
     <section class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; Your Website 2019</small>
+        <small>&copy; Kurt Yilmaz 2019</small>
       </div>
     </section>
 
@@ -844,10 +863,21 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/jqBootstrapValidation.min.js"></script>
     <script src="js/contact_me.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="js/index.js"></script>
+
+    <!-- Homepage background-->
+    <script src="js/p5.min.js"></script>
+    <script src="js/vanta.trunk.min.js"></script>
+    <script>
+      VANTA.TRUNK({
+        el: "#home",
+        color: 0xe83e8c,
+        backgroundColor: 0x2c3e50
+      });
+    </script>
   </body>
 </html>
