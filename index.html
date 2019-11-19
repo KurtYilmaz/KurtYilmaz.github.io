@@ -44,7 +44,7 @@
         <!-- Masthead Heading -->
         <div class="container">
           <h1 class="masthead-heading mb-0">
-            Hi, my name is
+            Hi, I'm
             <span class="text-primary">Kurt Yilmaz</span>.
           </h1>
           <div class="divider-light"></div>
@@ -113,33 +113,104 @@
     </nav>
 
     <!-- About Section -->
-    <section class="page-section text-white mb-0" id="about">
+    <section class="page-section text-dark mb-0" id="about">
       <div class="container">
         <!-- About Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase text-white">
+        <h2 class="page-section-heading text-center text-uppercase">
           About
         </h2>
 
         <!-- Icon Divider -->
-        <div class="divider-custom divider-light">
-          <div class="divider-custom-line divider-light"></div>
-          <div class="divider-custom-icon divider-light">
-            <i class="fas fa-smile-beam divider-light"></i>
+        <div class="divider-custom divider-dark">
+          <div class="divider-custom-line divider-dark"></div>
+          <div class="divider-custom-icon divider-dark">
+            <i class="fas fa-smile-beam divider-dark"></i>
           </div>
-          <div class="divider-custom-line divider-light"></div>
+          <div class="divider-custom-line divider-dark"></div>
         </div>
 
         <!-- About Section Content -->
         <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead">
-              Placeholder text.
+          <div class="col-lg-6 text-center">
+            <img
+              class="masthead-avatar mx-auto mb-5"
+              src="img/headshot.png"
+              alt="A picture of Kurt"
+            />
+            <p class="lead text-left">
+              I'm an engineer with an educational background in both software
+              and hardware. I have a passion for audio related projects, game
+              development, and embedded devices. Budding open source
+              contributor. Amateur music tinkerer.<br />
+              <a class="text-dark js-scroll-trigger" href="#contact">
+                <u
+                  >If you would like to work with me, feel free to send me a
+                  message!</u
+                >
+              </a>
             </p>
           </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead">
-              Placeholder text.
-            </p>
+          <div class="col-lg-6 mx-auto text-center">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a
+                  class="nav-item nav-link active"
+                  id="nav-home-tab"
+                  data-toggle="tab"
+                  href="#nav-home"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                  >Home</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="nav-profile-tab"
+                  data-toggle="tab"
+                  href="#nav-profile"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                  >Profile</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="nav-contact-tab"
+                  data-toggle="tab"
+                  href="#nav-contact"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                  >Contact</a
+                >
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-home"
+                role="tabpanel"
+                aria-labelledby="nav-home-tab"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-profile"
+                role="tabpanel"
+                aria-labelledby="nav-profile-tab"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-contact"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+              >
+                ...
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -182,7 +253,11 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid bg-info" src="img/portfolio/gatorsynth3d.png" alt="" />
+              <img
+                class="img-fluid bg-info"
+                src="img/portfolio/gatorsynth3d.png"
+                alt="Portfolio tile for the GatorSynth Sequencer - Kurt's senior project."
+              />
             </div>
           </div>
 
@@ -202,7 +277,11 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/game.png" alt="" />
+              <img
+                class="img-fluid"
+                src="img/portfolio/game.png"
+                alt="Portfolio tile for game projects."
+              />
             </div>
           </div>
 
@@ -222,7 +301,11 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/juce_adjusted.png" alt="" />
+              <img
+                class="img-fluid"
+                src="img/portfolio/juce_adjusted.png"
+                alt="Portfolio tile for JUCE (audio and MIDI plugin) projects"
+              />
             </div>
           </div>
 
@@ -242,7 +325,11 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/odin.png" alt="" />
+              <img
+                class="img-fluid"
+                src="img/portfolio/odin.png"
+                alt="Portfolio tile for web projects completed while completing the Odin Project's cirriculum."
+              />
             </div>
           </div>
         </div>
@@ -264,7 +351,7 @@
         <div class="divider-custom divider-light">
           <div class="divider-custom-line divider-light"></div>
           <div class="divider-custom-icon divider-light">
-            <i class="fas fa-envelope divider-light"></i>
+            <i class="fas fa-envelope"></i>
           </div>
           <div class="divider-custom-line divider-light"></div>
         </div>
@@ -282,7 +369,7 @@
             >
               <div class="control-group">
                 <div
-                  class="form-group floating-label-form-group controls mb-0 pb-2"
+                  class="form-group floating-label-form-group text-white controls mb-0 pb-2"
                 >
                   <label>Name</label>
                   <input
@@ -299,7 +386,7 @@
               </div>
               <div class="control-group">
                 <div
-                  class="form-group floating-label-form-group controls mb-0 pb-2"
+                  class="form-group floating-label-form-group text-white controls mb-0 pb-2"
                 >
                   <label>Email Address</label>
                   <input
@@ -316,7 +403,7 @@
               </div>
               <div class="control-group">
                 <div
-                  class="form-group floating-label-form-group controls mb-0 pb-2"
+                  class="form-group floating-label-form-group text-white controls mb-0 pb-2"
                 >
                   <label>Phone Number</label>
                   <input
@@ -333,7 +420,7 @@
               </div>
               <div class="control-group">
                 <div
-                  class="form-group floating-label-form-group controls mb-0 pb-2"
+                  class="form-group floating-label-form-group text-white controls mb-0 pb-2"
                 >
                   <label>Message</label>
                   <textarea
@@ -440,7 +527,7 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Log Cabin
+                    GatorSynth Step-Sequencer (senior project)
                   </h2>
                   <!-- Icon Divider -->
                   <div class="divider-custom">
@@ -453,7 +540,7 @@
                   <!-- Portfolio Modal - Image -->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="img/portfolio/cabin.png"
+                    src="img/portfolio/gatorsynth3d.png"
                     alt=""
                   />
                   <!-- Portfolio Modal - Text -->
@@ -505,7 +592,7 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Tasty Cake
+                    Game projects for Harvard's CS50G (GD50)
                   </h2>
                   <!-- Icon Divider -->
                   <div class="divider-custom">
@@ -518,7 +605,7 @@
                   <!-- Portfolio Modal - Image -->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="img/portfolio/cake.png"
+                    src="img/portfolio/game.png"
                     alt=""
                   />
                   <!-- Portfolio Modal - Text -->
@@ -570,7 +657,7 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Circus Tent
+                    Audio and MIDI plugin projects
                   </h2>
                   <!-- Icon Divider -->
                   <div class="divider-custom">
@@ -583,7 +670,7 @@
                   <!-- Portfolio Modal - Image -->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="img/portfolio/circus.png"
+                    src="img/portfolio/juce_adjusted.png"
                     alt=""
                   />
                   <!-- Portfolio Modal - Text -->
@@ -635,7 +722,7 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Controller
+                    Web assignments for the Odin Project
                   </h2>
                   <!-- Icon Divider -->
                   <div class="divider-custom">
@@ -648,7 +735,7 @@
                   <!-- Portfolio Modal - Image -->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="img/portfolio/game.png"
+                    src="img/portfolio/odin.png"
                     alt=""
                   />
                   <!-- Portfolio Modal - Text -->
@@ -679,8 +766,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.min.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
 
     <!-- Custom scripts -->
     <script src="js/index.js"></script>
