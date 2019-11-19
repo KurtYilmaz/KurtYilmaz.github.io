@@ -113,7 +113,11 @@
     </nav>
 
     <!-- About Section -->
-    <section class="page-section text-dark mb-0" id="about">
+    <section
+      class="page-section text-dark mb-0"
+      id="about"
+      style="z-index: 0; position: relative;"
+    >
       <div class="container">
         <!-- About Section Heading -->
         <h2 class="page-section-heading text-center text-uppercase">
@@ -130,19 +134,22 @@
         </div>
 
         <!-- About Section Content -->
-        <div class="row">
-          <div class="col-lg-6 text-center">
+        <div class="row ">
+          <div
+            class="col text-center bg-secondary shadow-lg rounded mr-2"
+            style="z-index: 10; position: relative;"
+          >
             <img
-              class="masthead-avatar mx-auto mb-5"
+              class="masthead-avatar mx-auto mb-5 mt-5"
               src="img/headshot.png"
               alt="A picture of Kurt"
             />
-            <p class="lead text-left">
+            <p class="lead text-left text-white">
               I'm an engineer with an educational background in both software
               and hardware. I have a passion for audio related projects, game
               development, and embedded devices. Budding open source
               contributor. Amateur music tinkerer.<br />
-              <a class="text-dark js-scroll-trigger" href="#contact">
+              <a class="js-scroll-trigger" href="#contact">
                 <u
                   >If you would like to work with me, feel free to send me a
                   message!</u
@@ -150,38 +157,41 @@
               </a>
             </p>
           </div>
-          <div class="col-lg-6 mx-auto text-center">
+          <div
+            class="col mx-auto text-center bg-secondary shadow-lg rounded ml-2"
+            style="z-index: 10; position: relative;"
+          >
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <a
                   class="nav-item nav-link active"
                   id="nav-home-tab"
                   data-toggle="tab"
-                  href="#nav-home"
+                  href="#nav-education"
                   role="tab"
                   aria-controls="nav-home"
                   aria-selected="true"
-                  >Home</a
+                  >Education</a
                 >
                 <a
                   class="nav-item nav-link"
                   id="nav-profile-tab"
                   data-toggle="tab"
-                  href="#nav-profile"
+                  href="#nav-employment"
                   role="tab"
                   aria-controls="nav-profile"
                   aria-selected="false"
-                  >Profile</a
+                  >Employment</a
                 >
                 <a
                   class="nav-item nav-link"
                   id="nav-contact-tab"
                   data-toggle="tab"
-                  href="#nav-contact"
+                  href="#nav-skills"
                   role="tab"
                   aria-controls="nav-contact"
                   aria-selected="false"
-                  >Contact</a
+                  >Skills</a
                 >
               </div>
             </nav>
