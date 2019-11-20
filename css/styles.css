@@ -35,6 +35,7 @@
   --light: #f8f9fa;
   --dark: #131D25;
   --primary-hover: #117964;
+  --secondary-hover: #1e2b37;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -4194,7 +4195,7 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs {
-  border-bottom: 0.125rem solid #dee2e6;
+  border-bottom: 0.125rem solid var(--pink);
 }
 
 .nav-tabs .nav-item {
@@ -4209,20 +4210,21 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link:hover,
 .nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
+  border-color: var(--light);
+  background-color: var(--secondary-hover);
 }
 
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+  color: var(--primary-hover);
   background-color: transparent;
   border-color: transparent;
 }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
-  background-color: var(--white);
-  border-color: #dee2e6 #dee2e6 var(--white);
+  color: var(--dark);
+  background-color: var(--primary);
+  border-color: var(--secondary);
 }
 
 .nav-tabs .dropdown-menu {
@@ -7735,15 +7737,15 @@ button.bg-dark:focus {
 }
 
 .shadow-sm {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1) !important;
 }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important;
 }
 
 .shadow-lg {
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6) !important;
 }
 
 .shadow-none {
