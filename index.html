@@ -49,8 +49,8 @@
           </h1>
           <div class="divider-light"></div>
           <h1 class="masthead-subheading mb-4">
-            I am a recently graduated software engineer with experience in
-            audio, game, embedded, and Android development.
+            I am a software engineer with experience in audio, game, embedded,
+            and Android development.
           </h1>
         </div>
         <a
@@ -113,10 +113,7 @@
     </nav>
 
     <!-- About Section -->
-    <section
-      class="page-section text-dark mb-0"
-      id="about"
-    >
+    <section class="page-section text-dark mb-0" id="about">
       <div class="container">
         <!-- About Section Heading -->
         <h2 class="page-section-heading text-center text-uppercase">
@@ -135,34 +132,32 @@
         <!-- About Section Content -->
         <div class="row ">
           <div
-            class="col text-center bg-secondary shadow rounded mr-2"
+            class="col text-center bg-secondary shadow rounded mx-3 my-2 justify-content-center"
           >
             <img
               class="masthead-avatar mx-auto mb-5 mt-5"
               src="img/headshot.png"
               alt="A picture of Kurt"
             />
-            <p class="lead text-justify text-white mx-2">
-              I'm an engineer with an educational background in both software
-              and hardware. I have a passion for audio related projects, game
-              development, and embedded devices. Budding open source
-              contributor. Amateur music tinkerer.<br />
+            <p class="lead text-justify text-white mx-auto">
+              I'm a recently graduated software engineer with an educational
+              background in both software and hardware. Passionate for audio
+              related projects, game development, and embedded devices. Budding
+              open source contributor. Amateur music tinkerer.<br />
               <a class="js-scroll-trigger" href="#contact">
-                <u
-                  >If you would like to work with me, feel free to send me a
-                  message!</u
-                >
+                If you would like to work with me, feel free to send me a
+                message!
               </a>
             </p>
           </div>
           <div
-            class="col mx-auto text-center bg-secondary shadow rounded ml-2"
+            class="col mx-auto text-center bg-secondary shadow rounded mx-3 my-2"
           >
             <nav>
-              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <div class="nav nav-tabs mx-2 my-2" id="nav-tab" role="tablist">
                 <a
                   class="nav-item nav-link active"
-                  id="nav-home-tab"
+                  id="nav-languages-tab"
                   data-toggle="tab"
                   href="#nav-languages"
                   role="tab"
@@ -172,7 +167,7 @@
                 >
                 <a
                   class="nav-item nav-link"
-                  id="nav-profile-tab"
+                  id="nav-skills-tab"
                   data-toggle="tab"
                   href="#nav-skills"
                   role="tab"
@@ -182,7 +177,7 @@
                 >
                 <a
                   class="nav-item nav-link"
-                  id="nav-contact-tab"
+                  id="nav-background-tab"
                   data-toggle="tab"
                   href="#nav-background"
                   role="tab"
@@ -192,28 +187,99 @@
                 >
               </div>
             </nav>
-            <div class="tab-content" id="nav-tabContent">
+            <div class="tab-content mx-2 my-2" id="nav-tabContent">
               <div
-                class="tab-pane fade show active"
-                id="nav-home"
+                class="tab-pane fade show active text-white"
+                id="nav-languages"
                 role="tabpanel"
-                aria-labelledby="nav-home-tab"
+                aria-labelledby="nav-languages-tab"
+              >
+                <table class="table text-white">
+                  <thead>
+                    <tr>
+                      <th scope="col">Language</th>
+                      <th scope="col">Proficiency</th>
+                      <th scope="col">Years Used</th>
+                      <th scope="col-lg">Notable Projects</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">C++</th>
+                      <td>Proficient</td>
+                      <td>5</td>
+                      <td>
+                        Audio plugins, video games in SFML, university
+                        coursework.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">C</th>
+                      <td>Proficient</td>
+                      <td>2</td>
+                      <td>
+                        Senior project (GatorSynth), Minix OS development,
+                        embedded projects, and other university coursework.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Java</th>
+                      <td>Proficient</td>
+                      <td>2</td>
+                      <td>
+                        Android application (at Jabil), university coursework.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Lua</th>
+                      <td>Competent</td>
+                      <td><1</td>
+                      <td>
+                        Video games in LOVE2D.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">C#</th>
+                      <td>Competent</td>
+                      <td><1</td>
+                      <td>
+                        Contribution to "BetterJoyForCemu" (open source
+                        controller drivers).
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Assembly (MIPS/AVR)</th>
+                      <td>Competent</td>
+                      <td>2</td>
+                      <td>
+                        University coursework (embedded and on PC).
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">JavaScript (ES6)</th>
+                      <td>Familiar</td>
+                      <td><1</td>
+                      <td>
+                        This website, Odin Project assignments, p5.js
+                        animations.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="tab-pane fade text-white"
+                id="nav-skills"
+                role="tabpanel"
+                aria-labelledby="nav-skills-tab"
               >
                 ...
               </div>
               <div
-                class="tab-pane fade"
-                id="nav-profile"
+                class="tab-pane fade text-white"
+                id="nav-background"
                 role="tabpanel"
-                aria-labelledby="nav-profile-tab"
-              >
-                ...
-              </div>
-              <div
-                class="tab-pane fade"
-                id="nav-contact"
-                role="tabpanel"
-                aria-labelledby="nav-contact-tab"
+                aria-labelledby="nav-background-tab"
               >
                 ...
               </div>
