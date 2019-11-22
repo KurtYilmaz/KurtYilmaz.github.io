@@ -5905,11 +5905,14 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: var(--white);
+  background-color: var(--secondary);
   background-clip: padding-box;
   border: 0 solid rgba(0, 0, 0, 0.2);
   border-radius: 0.75rem;
   outline: 0;
+  color: var(--white);
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .modal-backdrop {
@@ -5948,6 +5951,7 @@ a.close.disabled {
 .modal-title {
   margin-bottom: 0;
   line-height: 1.5;
+  color: var(--white);
 }
 
 .modal-body {
@@ -10201,14 +10205,16 @@ a.text-dark:focus {
 }
 
 .portfolio-modal .portfolio-modal-title {
-  font-size: 2.25rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: var(--white);
+  min-width: 80%;
 }
 
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
     font-size: 3rem;
-    line-height: 2.5rem;
+    line-height: 4rem;
   }
 }
 
@@ -10291,4 +10297,19 @@ form .row:first-child .floating-label-form-group {
 
 #about {
   background-color: var(--primary);
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+  height: 0;
+}
+
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
