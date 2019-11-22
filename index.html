@@ -114,7 +114,7 @@
 
     <!-- About Section -->
     <section class="page-section text-dark mb-0" id="about">
-      <div class="container">
+      <div class="container mx-auto" style="min-width: 98%;">
         <!-- About Section Heading -->
         <h2 class="page-section-heading text-center text-uppercase">
           About
@@ -130,158 +130,255 @@
         </div>
 
         <!-- About Section Content -->
-        <div class="row ">
+        <div class="row">
           <div
-            class="col text-center bg-secondary shadow rounded mx-3 my-2 justify-content-center"
+            class="col-md-4 text-center bg-secondary shadow rounded mx-auto my-2"
           >
             <img
               class="masthead-avatar mx-auto mb-5 mt-5"
               src="img/headshot.png"
               alt="A picture of Kurt"
             />
-            <p class="lead text-justify text-white mx-auto">
+            <p
+              class="lead text-justify text-white mx-auto"
+              style="max-width: 90%"
+            >
               I'm a recently graduated software engineer with an educational
               background in both software and hardware. Passionate for audio
               related projects, game development, and embedded devices. Budding
               open source contributor. Amateur music tinkerer.<br />
-              <a class="js-scroll-trigger" href="#contact">
-                If you would like to work with me, feel free to send me a
-                message!
+              <a class="js-scroll-trigger font-weight-bold" href="#contact">
+                If you would like to work with me, request my resume, or just
+                say hi, feel free to send me a message!
               </a>
             </p>
           </div>
           <div
-            class="col mx-auto text-center bg-secondary shadow rounded mx-3 my-2"
+            class="col-md-7 offset-md-1 text-center bg-secondary shadow rounded mx-auto my-2"
           >
             <nav>
               <div class="nav nav-tabs mx-2 my-2" id="nav-tab" role="tablist">
                 <a
                   class="nav-item nav-link active"
-                  id="nav-languages-tab"
-                  data-toggle="tab"
-                  href="#nav-languages"
-                  role="tab"
-                  aria-controls="nav-languages"
-                  aria-selected="true"
-                  >Languages</a
-                >
-                <a
-                  class="nav-item nav-link"
-                  id="nav-skills-tab"
-                  data-toggle="tab"
-                  href="#nav-skills"
-                  role="tab"
-                  aria-controls="nav-skills"
-                  aria-selected="false"
-                  >Skills</a
-                >
-                <a
-                  class="nav-item nav-link"
                   id="nav-background-tab"
                   data-toggle="tab"
                   href="#nav-background"
                   role="tab"
                   aria-controls="nav-background"
-                  aria-selected="false"
+                  aria-selected="true"
                   >Background</a
                 >
+                <a
+                  class="nav-item nav-link"
+                  id="nav-languages-tab"
+                  data-toggle="tab"
+                  href="#nav-languages"
+                  role="tab"
+                  aria-controls="nav-languages"
+                  aria-selected="false"
+                  >Languages</a
+                >
+                <!-- TODO technologies tab-->
+                <!-- <a
+                  class="nav-item nav-link"
+                  id="nav-technologies-tab"
+                  data-toggle="tab"
+                  href="#nav-technologies"
+                  role="tab"
+                  aria-controls="nav-technologies"
+                  aria-selected="false"
+                  >Technologies</a
+                > -->
               </div>
             </nav>
             <div class="tab-content mx-2 my-2" id="nav-tabContent">
               <div
-                class="tab-pane fade show active text-white"
+                class="tab-pane fade text-white text-center"
                 id="nav-languages"
                 role="tabpanel"
                 aria-labelledby="nav-languages-tab"
               >
-                <table class="table text-white">
-                  <thead>
-                    <tr>
-                      <th scope="col">Language</th>
-                      <th scope="col">Proficiency</th>
-                      <th scope="col">Years Used</th>
-                      <th scope="col-lg">Notable Projects</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">C++</th>
-                      <td>Proficient</td>
-                      <td>5</td>
-                      <td>
-                        Audio plugins, video games in SFML, university
-                        coursework.
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">C</th>
-                      <td>Proficient</td>
-                      <td>2</td>
-                      <td>
-                        Senior project (GatorSynth), Minix OS development,
-                        embedded projects, and other university coursework.
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Java</th>
-                      <td>Proficient</td>
-                      <td>2</td>
-                      <td>
-                        Android application (at Jabil), university coursework.
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Lua</th>
-                      <td>Competent</td>
-                      <td><1</td>
-                      <td>
-                        Video games in LOVE2D.
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">C#</th>
-                      <td>Competent</td>
-                      <td><1</td>
-                      <td>
-                        Contribution to "BetterJoyForCemu" (open source
-                        controller drivers).
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Assembly (MIPS/AVR)</th>
-                      <td>Competent</td>
-                      <td>2</td>
-                      <td>
-                        University coursework (embedded and on PC).
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">JavaScript (ES6)</th>
-                      <td>Familiar</td>
-                      <td><1</td>
-                      <td>
-                        This website, Odin Project assignments, p5.js
-                        animations.
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-responsive mx-auto" style="max-width: 95%;">
+                  <table class="table-striped table text-white">
+                    <thead>
+                      <tr>
+                        <th scope="col">Language</th>
+                        <th scope="col">Skill Level</th>
+                        <th scope="col">Notable Projects</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">C++</th>
+                        <td>Proficient</td>
+                        <td>
+                          Audio plugins, video games in SFML, university
+                          coursework.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">C</th>
+                        <td>Proficient</td>
+                        <td>
+                          Senior project (GatorSynth), Minix OS development,
+                          embedded projects, and other university coursework.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Java</th>
+                        <td>Proficient</td>
+                        <td>
+                          Android application (at Jabil), university coursework.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Lua</th>
+                        <td>Competent</td>
+                        <td>
+                          Video games in LOVE2D.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">C#</th>
+                        <td>Competent</td>
+                        <td>
+                          Contribution to "BetterJoyForCemu" (open source
+                          controller drivers).
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Assembly (MIPS/AVR)</th>
+                        <td>Competent</td>
+                        <td>
+                          University coursework (embedded and on PC).
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">VHDL</th>
+                        <td>Competent</td>
+                        <td>
+                          32-bit MIPS CPU modelled on FPGA, other university
+                          coursework.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">JavaScript (ES6)</th>
+                        <td>Familiar</td>
+                        <td>
+                          This website, Odin Project assignments, p5.js
+                          animations.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Python 3</th>
+                        <td>Familiar</td>
+                        <td>
+                          Robotics application (at Jabil). Scripting.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-              <div
-                class="tab-pane fade text-white"
-                id="nav-skills"
+              <!-- TODO technologies tab content-->
+              <!-- <div
+                class="tab-pane fade text-white text-justify"
+                id="nav-technologies"
                 role="tabpanel"
-                aria-labelledby="nav-skills-tab"
+                aria-labelledby="nav-technologies-tab"
               >
-                ...
-              </div>
+                <p>
+                  General: Git, Android, Bash
+                </p>
+                <p>
+                  Embedded: RTOS, bare metal, communication protocols(SPI, I2C,
+                  UART), NFC, DSP
+                </p>
+                <p>
+                  Web: HTML5, CSS, Node.js, Jest, Bootstrap
+                </p>
+                <p>
+                  Hardware:
+                </p>
+              </div> -->
               <div
-                class="tab-pane fade text-white"
+                class="tab-pane fade show active text-white text-left"
                 id="nav-background"
                 role="tabpanel"
                 aria-labelledby="nav-background-tab"
               >
-                ...
+                <div class="container mx-auto my-auto">
+                  <h5 class="text-uppercase"><u>Education</u></h5>
+                  <h6>
+                    Bachelor of Science in Computer Engineering
+                    <a href="https://www.ece.ufl.edu/"
+                      >@ The University of Florida</a
+                    >
+                  </h6>
+                  <h6>
+                    Former President of
+                    <a href="http://www.ufaes.org/"
+                      >Audio Engineering Society @ UF</a
+                    >
+                  </h6>
+                  <h6>
+                    Coursework:
+                  </h6>
+                  <ul>
+                    <li>
+                      Design 2 project: GatorSynth Step-Sequencer. Awarded "Top
+                      5" at UF ECE's design competition.
+                    </li>
+                    <li>Microprocessor Applications</li>
+                    <li>Operating Systems.</li>
+                    <li>3D Audio (HRTF software).</li>
+                    <li>
+                      Software Engineering (principles of agile development).
+                    </li>
+                    <li>Digital Design (FPGAs).</li>
+                  </ul>
+                </div>
+                <hr style="border-color: #1abc9c;" />
+                <div class="container mx-auto my-auto">
+                  <h5 class="text-uppercase"><u>Employment</u></h5>
+                  <h6>
+                    Hardware Innovation Group Intern
+                    <a href="https://www.jabil.com/">@ Jabil</a>
+                  </h6>
+                  <p>
+                    Worked with a multidisciplinary engineering team to
+                    interface with customers and develop new manufacturing
+                    technology in order to improve Jabil's capabilities or
+                    satisfy customer requirements. I was primarily focused on
+                    development of
+                    <a
+                      href="https://www.jabil.com/capabilities/printed-electronics.html"
+                      class="font-weight-bold"
+                    >
+                      printed electronics</a
+                    >
+                    and software for the team. Interned for two consecutive
+                    summers.
+                  </p>
+                  <h6>
+                    Personal Accomplishments:
+                  </h6>
+                  <ul>
+                    <li>
+                      Published company IP in the form of an NFC Android
+                      application.
+                    </li>
+                    <li>
+                      Developed software and hardware for a Python-based
+                      robotics application for Raspberry Pi (Debian Linux).
+                    </li>
+                    <li>
+                      Designed schematics and wrote software for a DSP audio
+                      project. Improved and evaluated the corresponding
+                      hardware.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
