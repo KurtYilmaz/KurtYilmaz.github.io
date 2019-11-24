@@ -3076,7 +3076,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:disabled,
-.btn-link.disabled {
+.btn-link.disabled,
+.card-link:disabled,
+.card-link.disabled {
   color: #6c757d;
   pointer-events: none;
 }
@@ -4659,6 +4661,7 @@ input[type="button"].btn-block {
   border-radius: 0.5rem;
   margin: 0 auto !important;
   width: 15rem;
+  height: 100%;
 }
 
 .card-text {
@@ -4715,11 +4718,11 @@ input[type="button"].btn-block {
 
 .card-header {
   padding: 1rem 0.5rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .card-header-icon {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   text-align: left;
   margin-left: 1rem;
 }
@@ -5968,7 +5971,7 @@ a.close.disabled {
 .modal-header {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 1rem 1rem;
   border-bottom: 0 solid #dee2e6;
   border-top-left-radius: 0.75rem;
@@ -10341,8 +10344,8 @@ form .row:first-child .floating-label-form-group {
 
 .video-wrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
+	padding-bottom: 56.25%;
+	padding-top: 0px;
   height: 0;
 }
 
@@ -10351,7 +10354,8 @@ form .row:first-child .floating-label-form-group {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+  height: 100%;
+  border-color: #000000;
 }
 
 .modal-icon {
@@ -10372,4 +10376,8 @@ form .row:first-child .floating-label-form-group {
 .modal-media {
   margin-bottom: 3rem;
   margin-top: 1.5rem;
+}
+
+.link-container {
+    -webkit-user-select: none;
 }
