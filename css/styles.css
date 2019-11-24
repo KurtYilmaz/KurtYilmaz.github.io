@@ -36,6 +36,12 @@
   --dark: #131d25;
   --primary-hover: #80ffff;
   --secondary-hover: #1e2b37;
+  --primary-trans-05: #1abc9c05;
+  --primary-trans-10: #1abc9c0a;
+  --primary-trans-50: #1abc9c80;
+  --white-trans-05: #ffffff05;
+  --white-trans-10: #ffffff0a;
+  --white-trans-50: #ffffff80;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -4646,10 +4652,18 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: var(--white);
+  background-color: var(--white-trans-10);
+  color: var(--white);
   background-clip: border-box;
-  border: 0.125rem solid rgba(0, 0, 0, 0.125);
+  border: 0.125rem solid rgba(255, 255, 255, 0.125);
   border-radius: 0.5rem;
+  margin: 0 auto !important;
+  width: 15rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
 .card > hr {
@@ -4669,10 +4683,12 @@ input[type="button"].btn-block {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1.25rem;
+  padding: 1rem 0.5rem;
 }
 
 .card-title {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   margin-bottom: 0.75rem;
 }
 
@@ -4685,6 +4701,10 @@ input[type="button"].btn-block {
   margin-bottom: 0;
 }
 
+.card-link {
+  font-size: 1.25rem;
+}
+
 .card-link:hover {
   text-decoration: none;
 }
@@ -4694,10 +4714,14 @@ input[type="button"].btn-block {
 }
 
 .card-header {
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.125);
+  padding: 1rem 0.5rem;
+  justify-content: space-between;
+}
+
+.card-header-icon {
+  font-size: 2.5rem;
+  text-align: left;
+  margin-left: 1rem;
 }
 
 .card-header:first-child {
@@ -4709,13 +4733,21 @@ input[type="button"].btn-block {
 }
 
 .card-footer {
-  padding: 0.75rem 1.25rem;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 0.125rem solid rgba(0, 0, 0, 0.125);
+  padding: 1rem 0.5rem;
 }
 
 .card-footer:last-child {
   border-radius: 0 0 calc(0.5rem - 0.125rem) calc(0.5rem - 0.125rem);
+}
+
+.card-skill {
+  color: var(--warning);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.card-skill + .card-skill {
+  margin-left: 1rem;
 }
 
 .card-header-tabs {
@@ -6008,10 +6040,17 @@ a.close.disabled {
   }
 }
 
+@media (min-width: 750px) {
+  .modal-lg,
+  .modal-xl {
+    max-width: 700px;
+  }
+}
+
 @media (min-width: 992px) {
   .modal-lg,
   .modal-xl {
-    max-width: 800px;
+    max-width: 942px;
   }
 }
 
@@ -9790,7 +9829,7 @@ a.text-primary:focus {
 
 a.text-secondary:hover,
 a.text-secondary:focus {
-  color: #11181f !important;
+  color: var(--secondary-hover) !important;
 }
 
 .text-success {
@@ -9852,7 +9891,7 @@ a.text-dark:focus {
 }
 
 .text-muted {
-  color: #6c757d !important;
+  color: var(--gray) !important;
 }
 
 .text-black-50 {
@@ -10209,6 +10248,7 @@ a.text-dark:focus {
   line-height: 2.5rem;
   color: var(--white);
   min-width: 80%;
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 992px) {
@@ -10312,4 +10352,24 @@ form .row:first-child .floating-label-form-group {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.modal-icon {
+  font-size: 3rem;
+  cursor: pointer;
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.modal-icon:hover {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-media {
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
 }

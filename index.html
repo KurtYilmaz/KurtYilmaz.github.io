@@ -42,7 +42,7 @@
     >
       <div class="container d-flex align-items-center flex-column">
         <!-- Masthead Heading -->
-        <div class="container">
+        <div class="container" style="padding: 0;">
           <h1 class="masthead-heading mb-0">
             Hi, I'm
             <span class="text-primary">Kurt Yilmaz</span>.
@@ -235,7 +235,7 @@
                         <th scope="row">Lua</th>
                         <td>Competent</td>
                         <td>
-                          Video games in LOVE2D.
+                          Video games in LÖVE.
                         </td>
                       </tr>
                       <tr>
@@ -456,7 +456,7 @@
           </div>
 
           <!-- Portfolio Item 3 -->
-          <div class="col-md-6 col-lg-4">
+          <!-- <div class="col-md-6 col-lg-4">
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
@@ -477,7 +477,7 @@
                 alt="Portfolio tile for JUCE (audio and MIDI plugin) projects"
               />
             </div>
-          </div>
+          </div> -->
 
           <!-- Portfolio Item 4 -->
           <div class="col-md-6 col-lg-4">
@@ -668,7 +668,7 @@
 
     <!-- Portfolio Modals -->
 
-    <!-- Portfolio Modal 1  GatorSynth-->
+    <!-- GatorSynth Modal-->
     <div
       class="portfolio-modal modal fade"
       id="portfolioModal1"
@@ -692,30 +692,29 @@
           <div class="modal-body text-center">
             <div class="container">
               <div class="row justify-content-center">
-                <div class="col-lg-11">
+                <div class="col-xl-auto">
                   <!-- Portfolio Modal - Title -->
-                  <h2 class="portfolio-modal-title text-uppercase mb-1">
+                  <h2 class="portfolio-modal-title text-uppercase">
                     GatorSynth Step Sequencer (senior project)
                   </h2>
-                  <div class="video-wrapper mb-5">
+                  <a
+                    href="https://github.com/KurtYilmaz/gatorsynth_sequencer"
+                    target="_blank"
+                    ><i class="fab fa-w fa-github modal-icon"></i
+                  ></a>
+                  <div class="video-wrapper modal-media">
                     <iframe
                       src="https://drive.google.com/file/d/1ZPjoR6NwfAMeYyuV_27jF_WeEawncijw/preview"
                       allowfullscreen
                     ></iframe>
                   </div>
                   <!-- Portfolio Modal - Text -->
-                  <p class="mb-5">
+                  <p>
                     Awarded "Top 5" in UF ECE's design 2 competion. Click the
-                    Github link below to view documentation and code! This page
-                    is under construction, and currently has minimal information
-                    and styling.
+                    Github link above to view documentation and code! <br />
+                    NOTE: This page is under construction, and currently has
+                    minimal information and styling.
                   </p>
-                  <a
-                    href="https://github.com/KurtYilmaz/gatorsynth_sequencer"
-                    style="display: block;"
-                    target="_blank"
-                    >Github Link</a
-                  >
                   <button
                     class="btn btn-primary mt-5"
                     href="#"
@@ -732,7 +731,7 @@
       </div>
     </div>
 
-    <!-- Portfolio Modal 2 -->
+    <!-- Games Modal -->
     <div
       class="portfolio-modal modal fade"
       id="portfolioModal2"
@@ -754,42 +753,180 @@
             </span>
           </button>
           <div class="modal-body text-center">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <!-- Portfolio Modal - Title -->
-                  <h2
-                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                  >
-                    Game projects for Harvard's CS50G (GD50)
-                  </h2>
-                  <!-- Icon Divider -->
-                  <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                      <i class="fas fa-star"></i>
+            <div class="row justify-content-center">
+              <div class="col-xl-auto">
+                <!-- Games Modal - Title -->
+                <h2 class="portfolio-modal-title text-uppercase">
+                  Game projects for Harvard's Introduction to Game Development
+                </h2>
+                <a
+                  href="https://github.com/KurtYilmaz/cs50g-kurt"
+                  target="_blank"
+                  ><i class="fab fa-w modal-icon fa-github"></i
+                ></a>
+                <a
+                  href="https://github.com/KurtYilmaz/cs50g-kurt-builds/archive/master.zip"
+                  target="_blank"
+                  ><i class="fas fa-w modal-icon fa-download"></i
+                ></a>
+
+                <!-- Games Modal - Cards -->
+                <div class="container my-3">
+                  <div class="row">
+                    <div class="col my-4 justify-content-center">
+                      <div class="card">
+                        <div class="card-header row">
+                          <div class="col card-header-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                          <div class="col">
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt/tree/master/assignment3"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fab fa-w fa-github"></i
+                            ></a>
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt-builds/blob/master/Assignments%201-7%20(LOVE)/3%20-%20Match%203.exe?raw=true"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fas fa-download"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Match 3</h5>
+                          <p class="card-text">
+                            A recreation of the mobile game "Flappy Bird".
+                            Controls: Press "space" to fly up [slightly].
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <i class="card-skill">Lua</i>
+                          <i class="card-skill">LÖVE </i>
+                        </div>
+                      </div>
                     </div>
-                    <div class="divider-custom-line"></div>
+                    <div class="col my-4 justify-content-center">
+                      <div class="card">
+                        <div class="card-header row">
+                          <div class="col card-header-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                          <div class="col">
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt/tree/master/assignment2"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fab fa-w fa-github"></i
+                            ></a>
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt-builds/blob/master/Assignments%201-7%20(LOVE)/2%20-%20Breakout.exe?raw=true"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fas fa-download"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Breakout</h5>
+                          <p class="card-text">
+                            A recreation of the mobile game "Flappy Bird".
+                            Controls: Press "space" to fly up [slightly].
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <i class="card-skill">Lua</i>
+                          <i class="card-skill">LÖVE </i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col my-4 justify-content-center">
+                      <div class="card">
+                        <div class="card-header row">
+                          <div class="col card-header-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                          <div class="col">
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt/tree/master/assignment1"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fab fa-w fa-github"></i
+                            ></a>
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt-builds/blob/master/Assignments%201-7%20(LOVE)/1%20-%20Fifty%20Bird.exe?raw=true"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fas fa-download"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Fifty Bird</h5>
+                          <p class="card-text">
+                            A recreation of the mobile game "Flappy Bird".
+                            Controls: Press "space" to fly up [slightly].
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <i class="card-skill">Lua</i>
+                          <i class="card-skill">LÖVE </i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col my-4 justify-content-center">
+                      <div class="card">
+                        <div class="card-header row">
+                          <div class="col card-header-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                          <div class="col">
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt/tree/master/assignment0"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fab fa-w fa-github"></i
+                            ></a>
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt-builds/blob/master/Assignments%201-7%20(LOVE)/0%20-%20Pong.exe?raw=true"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fas fa-download"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Pong</h5>
+                          <p class="card-text">
+                            Play pong against a computer player. Controls:
+                            "up" and "down" arrow keys to move.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <i class="card-skill">Lua</i>
+                          <i class="card-skill">LÖVE </i>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <!-- Portfolio Modal - Image -->
-                  <img
-                    class="img-fluid rounded mb-5"
-                    src="img/portfolio/game.png"
-                    alt=""
-                  />
-                  <!-- Portfolio Modal - Text -->
-                  <p class="mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                    recusandae quos quis inventore quisquam velit asperiores,
-                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                    Nam.
-                  </p>
-                  <button class="btn btn-primary" href="#" data-dismiss="modal">
-                    <i class="fas fa-times fa-fw"></i>
-                    Close Window
-                  </button>
                 </div>
+                <!-- Games Modal - Text -->
+                <p>
+                  The projects listed above are video games that I made to
+                  satisfy the requirements for Harvard's "CS50G: Introduction
+                  to Game Development" course. The GitHub links are to the
+                  codebase, and the download links are Windows versions of the
+                  builds. Linux versions will be posted soon&trade;!
+                </p>
+                <button
+                  class="btn btn-primary mt-5"
+                  href="#"
+                  data-dismiss="modal"
+                >
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
               </div>
             </div>
           </div>
@@ -798,7 +935,7 @@
     </div>
 
     <!-- Portfolio Modal 3 -->
-    <div
+    <!-- <div
       class="portfolio-modal modal fade"
       id="portfolioModal3"
       tabindex="-1"
@@ -822,35 +959,26 @@
             <div class="container">
               <div class="row justify-content-center">
                 <div class="col-lg-8">
-                  <!-- Portfolio Modal - Title -->
-                  <h2
-                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                  >
+                  <h2 class="portfolio-modal-title text-uppercase mb-0">
                     Audio and MIDI plugin projects
                   </h2>
-                  <!-- Icon Divider -->
-                  <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <div class="divider-custom-line"></div>
-                  </div>
-                  <!-- Portfolio Modal - Image -->
                   <img
                     class="img-fluid rounded mb-5"
                     src="img/portfolio/juce_adjusted.png"
                     alt=""
                   />
-                  <!-- Portfolio Modal - Text -->
-                  <p class="mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                    recusandae quos quis inventore quisquam velit asperiores,
-                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                    Nam.
+                  <p>
+                    More information and links coming soon!
                   </p>
-                  <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <p>
+                    NOTE: This page is under construction, and currently has
+                    minimal information and styling.
+                  </p>
+                  <button
+                    class="btn btn-primary mt-5"
+                    href="#"
+                    data-dismiss="modal"
+                  >
                     <i class="fas fa-times fa-fw"></i>
                     Close Window
                   </button>
@@ -860,9 +988,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <!-- Portfolio Modal 4 -->
+    <!-- Odin Modal -->
     <div
       class="portfolio-modal modal fade"
       id="portfolioModal4"
@@ -886,36 +1014,99 @@
           <div class="modal-body text-center">
             <div class="container">
               <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <!-- Portfolio Modal - Title -->
-                  <h2
-                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                  >
+                <div class="col-xl-auto">
+                  <!-- Odin Modal - Title -->
+                  <h2 class="portfolio-modal-title text-uppercase mb-0">
                     Web assignments for the Odin Project
                   </h2>
-                  <!-- Icon Divider -->
-                  <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                      <i class="fas fa-star"></i>
+
+                  <!-- Odin Modal - cards -->
+                  <div class="container my-3">
+                    <div class="row">
+                      <div class="col my-4 justify-content-center">
+                        <div class="card">
+                          <div class="card-header row">
+                            <div class="col card-header-icon">
+                              <i class="fas fa-wifi"></i>
+                            </div>
+                            <div class="col">
+                              <a
+                                href="https://github.com/KurtYilmaz/rock-paper-scissors"
+                                target="_blank"
+                                class="card-link"
+                                ><i class="fab fa-w fa-github"></i
+                              ></a>
+                              <a
+                                href="https://kurtyilmaz.github.io/rock-paper-scissors/"
+                                target="_blank"
+                                class="card-link"
+                                ><i class="fas fa-external-link-alt"></i
+                              ></a>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Rock, Paper, Scissors</h5>
+                            <p class="card-text">
+                              A best-of-9 round of rock paper scissors against a
+                              computer.
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <i class="card-skill">HTML</i>
+                            <i class="card-skill">CSS</i>
+                            <i class="card-skill">JS</i>
+                            <i class="card-skill">Jest</i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col my-4 justify-content-center">
+                        <div class="card">
+                          <div class="card-header row">
+                            <div class="col card-header-icon">
+                              <i class="fas fa-wifi"></i>
+                            </div>
+                            <div class="col">
+                              <a
+                                href="https://github.com/KurtYilmaz/google-homepage"
+                                target="_blank"
+                                class="card-link"
+                                ><i class="fab fa-w fa-github"></i
+                              ></a>
+                              <a
+                                href="https://kurtyilmaz.github.io/google-homepage/"
+                                target="_blank"
+                                class="card-link"
+                                ><i class="fas fa-external-link-alt"></i
+                              ></a>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Google Homepage</h5>
+                            <p class="card-text">
+                              A visual recreation of the Google Homepage
+                              (non-functioning).
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <i class="card-skill">HTML</i>
+                            <i class="card-skill">CSS</i>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="divider-custom-line"></div>
                   </div>
-                  <!-- Portfolio Modal - Image -->
-                  <img
-                    class="img-fluid rounded mb-5"
-                    src="img/portfolio/odin.png"
-                    alt=""
-                  />
-                  <!-- Portfolio Modal - Text -->
-                  <p class="mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                    recusandae quos quis inventore quisquam velit asperiores,
-                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                    Nam.
+
+                  <!-- Odin Modal - Text -->
+                  <p>
+                    The Odin Project is an open-source curriculum for learning
+                    web development. I am following the curriculum to improve my
+                    full stack web development skills.
                   </p>
-                  <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <button
+                    class="btn btn-primary mt-5"
+                    href="#"
+                    data-dismiss="modal"
+                  >
                     <i class="fas fa-times fa-fw"></i>
                     Close Window
                   </button>
