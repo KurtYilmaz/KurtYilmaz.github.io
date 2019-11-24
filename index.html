@@ -1,57 +1,1352 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Personal website for Kurt Yilmaz." />
+    <meta name="author" content="Kurt Yilmaz" />
 
-	<head>
-		<link rel='icon' href='images/favicon.ico' type='image/x-icon' />
-		<title>Kurt Yilmaz</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript>
-			<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+    <title>Kurt Yilmaz</title>
+    <link rel="icon" href="img/favicon.ico" />
 
-	<body class="is-preload">
+    <!-- Custom fonts for this theme -->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-		<!-- Wrapper -->
-		<div id="wrapper">
+    <!-- Theme CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
 
-			<!-- Main -->
-			<section id="main">
-				<header>
-					<span class="avatar"><img src="images/headshot.png" alt="Picture of Kurt" width="120px"
-							height="120px" /></span>
-					<h1>Kurt Yilmaz</h1>
-					<p>Software Engineer</p>
-				</header>
+  <body id="page-top">
+    <!-- Masthead -->
+    <header
+      class="masthead bg-secondary text-white text-center d-flex align-items-center"
+      style="height: 100vh"
+      id="home"
+    >
+      <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Heading -->
+        <div class="container" style="padding: 0;">
+          <h1 class="masthead-heading mb-0">
+            Hi, I'm
+            <span class="text-primary">Kurt Yilmaz</span>.
+          </h1>
+          <div class="divider-light"></div>
+          <h1 class="masthead-subheading mb-4">
+            I am a software engineer with experience in audio, game, embedded,
+            and Android development.
+          </h1>
+        </div>
+        <a
+          class="btn btn-xl btn-secondary btn-outline-primary font-weight-bold js-scroll-trigger"
+          id="btn-home"
+          href="#about"
+        >
+          About Me
+        </a>
+      </div>
+    </header>
 
-				<footer>
-					<ul class="icons">
-						<li><a href="https://linkedin.com/in/kurtyilmaz" class="icon brands fa-linkedin">LinkedIn</a></li>
-						<li><a href="https://github.com/kurtyilmaz" class="icon brands fa-github">Github</a></li>
-						<li><a href="mailto:kurtyilmaz@ufl.edu" class="icon solid fa-envelope">Email</a></li>
-					</ul>
-				</footer>
-			</section>
+    <!-- Navigation -->
+    <nav
+      class="navbar sticky-top navbar-expand-lg bg-secondary text-uppercase navbar-fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"
+          >Kurt Yilmaz</a
+        >
+        <button
+          class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<ul class="copyright">
-					<li>&copy; Kurt Yilmaz</li>
-					<li>Original Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
+    <!-- About Section -->
+    <section class="page-section text-dark mb-0" id="about">
+      <div class="container mx-auto" style="min-width: 98%;">
+        <!-- About Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase">
+          About
+        </h2>
 
-		</div>
+        <!-- Icon Divider -->
+        <div class="divider-custom divider-dark">
+          <div class="divider-custom-line divider-dark"></div>
+          <div class="divider-custom-icon divider-dark">
+            <i class="fas fa-smile-beam divider-dark"></i>
+          </div>
+          <div class="divider-custom-line divider-dark"></div>
+        </div>
 
-		<!-- Scripts -->
-		<script>
-			if ('addEventListener' in window) {
-				window.addEventListener('load', function () { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-			}
-		</script>
+        <!-- About Section Content -->
+        <div class="row">
+          <div
+            class="col-md-4 text-center bg-secondary shadow rounded mx-auto my-2"
+          >
+            <img
+              class="masthead-avatar mx-auto mb-5 mt-5"
+              src="img/headshot.png"
+              alt="A picture of Kurt"
+            />
+            <p
+              class="lead text-justify text-white mx-auto"
+              style="max-width: 90%"
+            >
+              I'm a recently graduated software engineer with an educational
+              background in both software and hardware. Passionate for audio
+              related projects, game development, and embedded devices. Budding
+              open source contributor. Amateur music tinkerer.<br />
+              <a class="js-scroll-trigger font-weight-bold" href="#contact">
+                If you would like to work with me, request my resume, or just
+                say hi, feel free to send me a message!
+              </a>
+            </p>
+          </div>
+          <div
+            class="col-md-7 offset-md-1 text-center bg-secondary shadow rounded mx-auto my-2"
+          >
+            <nav>
+              <div class="nav nav-tabs mx-2 my-2" id="nav-tab" role="tablist">
+                <a
+                  class="nav-item nav-link active"
+                  id="nav-background-tab"
+                  data-toggle="tab"
+                  href="#nav-background"
+                  role="tab"
+                  aria-controls="nav-background"
+                  aria-selected="true"
+                  >Background</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="nav-languages-tab"
+                  data-toggle="tab"
+                  href="#nav-languages"
+                  role="tab"
+                  aria-controls="nav-languages"
+                  aria-selected="false"
+                  >Languages</a
+                >
+                <!-- TODO technologies tab-->
+                <!-- <a
+                  class="nav-item nav-link"
+                  id="nav-technologies-tab"
+                  data-toggle="tab"
+                  href="#nav-technologies"
+                  role="tab"
+                  aria-controls="nav-technologies"
+                  aria-selected="false"
+                  >Technologies</a
+                > -->
+              </div>
+            </nav>
+            <div class="tab-content mx-2 my-2" id="nav-tabContent">
+              <div
+                class="tab-pane fade text-white text-center"
+                id="nav-languages"
+                role="tabpanel"
+                aria-labelledby="nav-languages-tab"
+              >
+                <div class="table-responsive mx-auto" style="max-width: 95%;">
+                  <table class="table-striped table text-white">
+                    <thead>
+                      <tr>
+                        <th scope="col">Language</th>
+                        <th scope="col">Skill Level</th>
+                        <th scope="col">Notable Projects</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">C++</th>
+                        <td>Proficient</td>
+                        <td>
+                          Audio plugins, video games in SFML, university
+                          coursework.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">C</th>
+                        <td>Proficient</td>
+                        <td>
+                          Senior project (GatorSynth), Minix OS development,
+                          embedded projects, and other university coursework.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Java</th>
+                        <td>Proficient</td>
+                        <td>
+                          Android application (at Jabil), university coursework.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Lua</th>
+                        <td>Competent</td>
+                        <td>
+                          Video games in LÖVE.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">C#</th>
+                        <td>Competent</td>
+                        <td>
+                          Contribution to "BetterJoyForCemu" (open source
+                          controller drivers).
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Assembly (MIPS/AVR)</th>
+                        <td>Competent</td>
+                        <td>
+                          University coursework (embedded and on PC).
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">VHDL</th>
+                        <td>Competent</td>
+                        <td>
+                          32-bit MIPS CPU modelled on FPGA, other university
+                          coursework.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">JavaScript (ES6)</th>
+                        <td>Familiar</td>
+                        <td>
+                          This website, Odin Project assignments, p5.js
+                          animations.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Python 3</th>
+                        <td>Familiar</td>
+                        <td>
+                          Robotics application (at Jabil). Scripting.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- TODO technologies tab content-->
+              <!-- <div
+                class="tab-pane fade text-white text-justify"
+                id="nav-technologies"
+                role="tabpanel"
+                aria-labelledby="nav-technologies-tab"
+              >
+                <p>
+                  General: Git, Android, Bash
+                </p>
+                <p>
+                  Embedded: RTOS, bare metal, communication protocols(SPI, I2C,
+                  UART), NFC, DSP
+                </p>
+                <p>
+                  Web: HTML5, CSS, Node.js, Jest, Bootstrap
+                </p>
+                <p>
+                  Hardware:
+                </p>
+              </div> -->
+              <div
+                class="tab-pane fade show active text-white text-left"
+                id="nav-background"
+                role="tabpanel"
+                aria-labelledby="nav-background-tab"
+              >
+                <div class="container mx-auto my-auto">
+                  <h5 class="text-uppercase"><u>Education</u></h5>
+                  <h6>
+                    Bachelor of Science in Computer Engineering
+                    <a href="https://www.ece.ufl.edu/"
+                      >@ The University of Florida</a
+                    >
+                  </h6>
+                  <h6>
+                    Former President of
+                    <a href="http://www.ufaes.org/"
+                      >Audio Engineering Society @ UF</a
+                    >
+                  </h6>
+                  <h6>
+                    Coursework:
+                  </h6>
+                  <ul>
+                    <li>
+                      Design 2 project: GatorSynth Step-Sequencer. Awarded "Top
+                      5" at UF ECE's design competition.
+                    </li>
+                    <li>Microprocessor Applications</li>
+                    <li>Operating Systems.</li>
+                    <li>3D Audio (HRTF software).</li>
+                    <li>
+                      Software Engineering (principles of agile development).
+                    </li>
+                    <li>Digital Design (FPGAs).</li>
+                  </ul>
+                </div>
+                <hr style="border-color: #1abc9c;" />
+                <div class="container mx-auto my-auto">
+                  <h5 class="text-uppercase"><u>Employment</u></h5>
+                  <h6>
+                    Hardware Innovation Group Intern
+                    <a href="https://www.jabil.com/">@ Jabil</a>
+                  </h6>
+                  <p>
+                    Worked with a multidisciplinary engineering team to
+                    interface with customers and develop new manufacturing
+                    technology in order to improve Jabil's capabilities or
+                    satisfy customer requirements. I was primarily focused on
+                    development of
+                    <a
+                      href="https://www.jabil.com/capabilities/printed-electronics.html"
+                      class="font-weight-bold"
+                    >
+                      printed electronics</a
+                    >
+                    and software for the team. Interned for two consecutive
+                    summers.
+                  </p>
+                  <h6>
+                    Personal Accomplishments:
+                  </h6>
+                  <ul>
+                    <li>
+                      Published company IP in the form of an NFC Android
+                      application.
+                    </li>
+                    <li>
+                      Developed software and hardware for a Python-based
+                      robotics application for Raspberry Pi (Debian Linux).
+                    </li>
+                    <li>
+                      Designed schematics and wrote software for a DSP audio
+                      project. Improved and evaluated the corresponding
+                      hardware.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	</body>
+    <!-- Portfolio Section -->
+    <section class="page-section portfolio" id="portfolio">
+      <div class="container">
+        <!-- Portfolio Section Heading -->
+        <h2
+          class="page-section-heading text-center text-uppercase text-white mb-0"
+        >
+          Portfolio
+        </h2>
 
+        <!-- Icon Divider -->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line divider-light"></div>
+          <div class="divider-custom-icon divider-light">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="divider-custom-line divider-light"></div>
+        </div>
+
+        <!-- Portfolio Grid Items -->
+        <div class="row">
+          <!-- Portfolio Item 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="portfolio-item mx-auto"
+              data-toggle="modal"
+              data-target="#portfolioModal1"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid bg-info"
+                src="img/portfolio/gatorsynth3d.png"
+                alt="Portfolio tile for the GatorSynth Sequencer - Kurt's senior project."
+              />
+            </div>
+          </div>
+
+          <!-- Portfolio Item 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="portfolio-item mx-auto"
+              data-toggle="modal"
+              data-target="#portfolioModal2"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="img/portfolio/game.png"
+                alt="Portfolio tile for game projects."
+              />
+            </div>
+          </div>
+
+          <!-- Portfolio Item 3 -->
+          <!-- <div class="col-md-6 col-lg-4">
+            <div
+              class="portfolio-item mx-auto"
+              data-toggle="modal"
+              data-target="#portfolioModal3"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="img/portfolio/juce_adjusted.png"
+                alt="Portfolio tile for JUCE (audio and MIDI plugin) projects"
+              />
+            </div>
+          </div> -->
+
+          <!-- Portfolio Item 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="portfolio-item mx-auto"
+              data-toggle="modal"
+              data-target="#portfolioModal4"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="img/portfolio/odin.png"
+                alt="Portfolio tile for web projects completed while completing the Odin Project's cirriculum."
+              />
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="page-section" id="contact">
+      <div class="container">
+        <!-- Contact Section Heading -->
+        <h2
+          class="page-section-heading text-center text-uppercase text-white mb-0"
+        >
+          Contact Me
+        </h2>
+
+        <!-- Icon Divider -->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line divider-light"></div>
+          <div class="divider-custom-icon divider-light">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="divider-custom-line divider-light"></div>
+        </div>
+
+        <!-- Contact Section Form -->
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+            <form
+              action="https://formspree.io/kurtyilmaz@ufl.edu"
+              method="POST"
+              name="sentMessage"
+              id="contactForm"
+              novalidate="novalidate"
+            >
+              <div class="control-group">
+                <div
+                  class="form-group floating-label-form-group text-white controls mb-0 pb-2"
+                >
+                  <label>Name</label>
+                  <input
+                    class="form-control"
+                    id="name"
+                    name="Name"
+                    type="text"
+                    placeholder="Name"
+                    required="required"
+                    data-validation-required-message="Please enter your name."
+                  />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div
+                  class="form-group floating-label-form-group text-white controls mb-0 pb-2"
+                >
+                  <label>Email Address</label>
+                  <input
+                    class="form-control"
+                    id="email"
+                    name="Email"
+                    type="email"
+                    placeholder="Email Address"
+                    required="required"
+                    data-validation-required-message="Please enter your email address."
+                  />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div
+                  class="form-group floating-label-form-group text-white controls mb-0 pb-2"
+                >
+                  <label>Phone Number</label>
+                  <input
+                    class="form-control"
+                    id="phone"
+                    name="Phone Number"
+                    type="tel"
+                    placeholder="Phone Number"
+                    required="required"
+                    data-validation-required-message="Please enter your phone number."
+                  />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div
+                  class="form-group floating-label-form-group text-white controls mb-0 pb-2"
+                >
+                  <label>Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="Message"
+                    rows="5"
+                    placeholder="Message"
+                    required="required"
+                    data-validation-required-message="Please enter a message."
+                  ></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br />
+              <div id="success"></div>
+              <div class="form-group">
+                <button
+                  type="submit"
+                  value="Send"
+                  class="btn btn-default btn-outline-primary btn-xl font-weight-bold"
+                  id="sendMessageButton"
+                  style="float: right;"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Footer Social Icons -->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <a
+              class="btn btn-outline-light btn-social mx-1"
+              href="https://github.com/KurtYilmaz"
+              target="_blank"
+            >
+              <i class="fab fa-fw fa-github"></i>
+            </a>
+            <a
+              class="btn btn-outline-light btn-social mx-1"
+              href="https://www.linkedin.com/in/kurtyilmaz/"
+              target="_blank"
+            >
+              <i class="fab fa-fw fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Copyright Section -->
+    <section class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>&copy; Kurt Yilmaz 2019</small>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a
+        class="js-scroll-trigger d-block text-center text-white rounded"
+        href="#page-top"
+      >
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+
+    <!-- GatorSynth Modal-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="portfolioModal1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">
+              <i class="fas fa-times"></i>
+            </span>
+          </button>
+          <div class="modal-body text-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-xl-auto">
+                  <!-- Portfolio Modal - Title -->
+                  <h2 class="portfolio-modal-title text-uppercase">
+                    GatorSynth Step Sequencer (senior project)
+                  </h2>
+                  <a
+                    href="https://github.com/KurtYilmaz/gatorsynth_sequencer"
+                    target="_blank"
+                    ><i class="fab fa-w fa-github modal-icon"></i
+                  ></a>
+                  <div class="video-wrapper modal-media">
+                    <iframe
+                      src="https://drive.google.com/file/d/1ZPjoR6NwfAMeYyuV_27jF_WeEawncijw/preview"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <!-- Portfolio Modal - Text -->
+                  <p>
+                    Awarded "Top 5" in UF ECE's design 2 competion. Click the
+                    Github link above to view more pictures, documentation, and code! <br />
+                  </p>
+                  <button
+                    class="btn btn-primary mt-5"
+                    href="#"
+                    data-dismiss="modal"
+                  >
+                    <i class="fas fa-times fa-fw"></i>
+                    Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Games Modal -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="portfolioModal2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">
+              <i class="fas fa-times"></i>
+            </span>
+          </button>
+          <div class="modal-body text-center">
+            <div class="row justify-content-center">
+              <div class="col-xl-auto">
+                <!-- Games Modal - Title -->
+                <h2 class="portfolio-modal-title text-uppercase">
+                  Game projects for Harvard's Introduction to Game Development
+                </h2>
+                <div class="link-container">
+                  <a
+                    href="https://github.com/KurtYilmaz/cs50g-kurt"
+                    target="_blank"
+                    ><i class="fab fa-w modal-icon fa-github"></i
+                  ></a>
+                  <a
+                    href="https://github.com/KurtYilmaz/cs50g-kurt-builds/archive/master.zip"
+                    target="_blank"
+                    ><i class="fas fa-w modal-icon fa-download"></i
+                  ></a>
+                </div>
+
+                <!-- Games Modal - Cards -->
+                <div class="container my-3">
+                  <div class="row align-items-stretch">
+                    <div class="col my-4 justify-content-center">
+                      <div class="card">
+                        <div class="card-header row">
+                          <div class="col card-header-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                          <div class="col link-container">
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt/tree/master/assignment9"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fab fa-w fa-github"></i
+                            ></a>
+                            <a
+                              href="#"
+                              target="_blank"
+                              class="card-link disabled"
+                              ><i class="fas fa-download"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Dreadhalls</h5>
+                          <p class="card-text">
+                            A horror game with the goal of finding a lost coin.
+                            Contains 3D procedural level generation, spacial
+                            audio, and a first person controller character.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <i class="card-skill">Lua</i>
+                          <i class="card-skill">LÖVE </i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col my-4 justify-content-center">
+                      <div class="card">
+                        <div class="card-header row">
+                          <div class="col card-header-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                          <div class="col link-container">
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt/tree/master/assignment8"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fab fa-w fa-github"></i
+                            ></a>
+                            <a
+                              href="#"
+                              target="_blank"
+                              class="card-link disabled"
+                              ><i class="fas fa-download"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">3D Helicopter</h5>
+                          <p class="card-text">
+                            An introduction to 3D game development in Unity. The
+                            goal is to avoid buildings and collect gems.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <i class="card-skill">Lua</i>
+                          <i class="card-skill">LÖVE </i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col my-4 justify-content-center">
+                      <div class="card">
+                        <div class="card-header row">
+                          <div class="col card-header-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                          <div class="col link-container">
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt/tree/master/assignment7"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fab fa-w fa-github"></i
+                            ></a>
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt-builds/blob/master/Assignments%201-7%20(LOVE)/7%20-%2050-Mon.exe?raw=true"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fas fa-download"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">50-Mon</h5>
+                          <p class="card-text">
+                            A simplified homage to Pokemon with wild battles.
+                            Introduces the state stack and RPG elements.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <i class="card-skill">Lua</i>
+                          <i class="card-skill">LÖVE </i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col my-4 justify-content-center">
+                      <div class="card">
+                        <div class="card-header row">
+                          <div class="col card-header-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                          <div class="col link-container">
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt/tree/master/assignment6"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fab fa-w fa-github"></i
+                            ></a>
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt-builds/blob/master/Assignments%201-7%20(LOVE)/6%20-%20Angry%2050.exe?raw=true"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fas fa-download"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Angry 50</h5>
+                          <p class="card-text">
+                            A clone of "Angry Birds". Uses the Box2D library for
+                            collision detection and physics effects.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <i class="card-skill">Lua</i>
+                          <i class="card-skill">LÖVE </i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col my-4 justify-content-center">
+                      <div class="card">
+                        <div class="card-header row">
+                          <div class="col card-header-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                          <div class="col link-container">
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt/tree/master/assignment5"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fab fa-w fa-github"></i
+                            ></a>
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt-builds/blob/master/Assignments%201-7%20(LOVE)/5%20-%20Legend%20of%2050.exe?raw=true"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fas fa-download"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Legend of 50</h5>
+                          <p class="card-text">
+                            Fight through a procedurally generated dungeon in a
+                            top-down style! Using custom collision detection
+                            with the implementation of hitboxes and hurtboxes.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <i class="card-skill">Lua</i>
+                          <i class="card-skill">LÖVE </i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col my-4 justify-content-center">
+                      <div class="card">
+                        <div class="card-header row">
+                          <div class="col card-header-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                          <div class="col link-container">
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt/tree/master/assignment4"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fab fa-w fa-github"></i
+                            ></a>
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt-builds/blob/master/Assignments%201-7%20(LOVE)/4%20-%20Super%2050%20Bros.exe?raw=true"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fas fa-download"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Super 50 Bros</h5>
+                          <p class="card-text">
+                            A 2D platformer with procedurally generated levels
+                            and similar mechanics to "Super Mario Bros".
+                            Introduction to 2D action game design.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <i class="card-skill">Lua</i>
+                          <i class="card-skill">LÖVE </i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col my-4 justify-content-center">
+                      <div class="card">
+                        <div class="card-header row">
+                          <div class="col card-header-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                          <div class="col link-container">
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt/tree/master/assignment3"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fab fa-w fa-github"></i
+                            ></a>
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt-builds/blob/master/Assignments%201-7%20(LOVE)/3%20-%20Match%203.exe?raw=true"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fas fa-download"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Match 3</h5>
+                          <p class="card-text">
+                            A match 3 game with mouse controls. Introduces
+                            animations and the use of spritesheets.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <i class="card-skill">Lua</i>
+                          <i class="card-skill">LÖVE </i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col my-4 justify-content-center">
+                      <div class="card">
+                        <div class="card-header row">
+                          <div class="col card-header-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                          <div class="col link-container">
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt/tree/master/assignment2"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fab fa-w fa-github"></i
+                            ></a>
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt-builds/blob/master/Assignments%201-7%20(LOVE)/2%20-%20Breakout.exe?raw=true"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fas fa-download"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Breakout</h5>
+                          <p class="card-text">
+                            A brick breaker game with powerups and one
+                            dimensional movement.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <i class="card-skill">Lua</i>
+                          <i class="card-skill">LÖVE </i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col my-4 justify-content-center">
+                      <div class="card">
+                        <div class="card-header row">
+                          <div class="col card-header-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                          <div class="col link-container">
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt/tree/master/assignment1"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fab fa-w fa-github"></i
+                            ></a>
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt-builds/blob/master/Assignments%201-7%20(LOVE)/1%20-%20Fifty%20Bird.exe?raw=true"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fas fa-download"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Fifty Bird</h5>
+                          <p class="card-text">
+                            A recreation of the mobile game "Flappy Bird".
+                            Controls: Press "space" to fly up [slightly].
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <i class="card-skill">Lua</i>
+                          <i class="card-skill">LÖVE </i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col my-4 justify-content-center">
+                      <div class="card">
+                        <div class="card-header row">
+                          <div class="col card-header-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                          <div class="col link-container">
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt/tree/master/assignment0"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fab fa-w fa-github"></i
+                            ></a>
+                            <a
+                              href="https://github.com/KurtYilmaz/cs50g-kurt-builds/blob/master/Assignments%201-7%20(LOVE)/0%20-%20Pong.exe?raw=true"
+                              target="_blank"
+                              class="card-link"
+                              ><i class="fas fa-download"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Pong</h5>
+                          <p class="card-text">
+                            Play pong against a computer player. Controls: "up"
+                            and "down" arrow keys to move.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <i class="card-skill">Lua</i>
+                          <i class="card-skill">LÖVE </i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Games Modal - Text -->
+                <p>
+                  The projects listed above are video games that I made to
+                  satisfy the requirements for Harvard's "CS50G: Introduction to
+                  Game Development" course. The GitHub links are to the
+                  codebase, and the download links are Windows versions of the
+                  builds. Linux versions will be posted soon&trade;!
+                </p>
+                <button
+                  class="btn btn-primary mt-5"
+                  href="#"
+                  data-dismiss="modal"
+                >
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <!-- <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal3"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="portfolioModal3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">
+              <i class="fas fa-times"></i>
+            </span>
+          </button>
+          <div class="modal-body text-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <h2 class="portfolio-modal-title text-uppercase mb-0">
+                    Audio and MIDI plugin projects
+                  </h2>
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="img/portfolio/juce_adjusted.png"
+                    alt=""
+                  />
+                  <p>
+                    More information and links coming soon!
+                  </p>
+                  <p>
+                    NOTE: This page is under construction, and currently has
+                    minimal information and styling.
+                  </p>
+                  <button
+                    class="btn btn-primary mt-5"
+                    href="#"
+                    data-dismiss="modal"
+                  >
+                    <i class="fas fa-times fa-fw"></i>
+                    Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Odin Modal -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal4"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="portfolioModal4Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">
+              <i class="fas fa-times"></i>
+            </span>
+          </button>
+          <div class="modal-body text-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-xl-auto">
+                  <!-- Odin Modal - Title -->
+                  <h2 class="portfolio-modal-title text-uppercase mb-0">
+                    Web assignments for the Odin Project
+                  </h2>
+
+                  <!-- Odin Modal - cards -->
+                  <div class="container my-3">
+                    <div class="row">
+                      <div class="col my-4 justify-content-center">
+                        <div class="card">
+                          <div class="card-header row">
+                            <div class="col card-header-icon">
+                              <i class="fas fa-wifi"></i>
+                            </div>
+                            <div class="col link-container">
+                              <a
+                                href="https://github.com/KurtYilmaz/rock-paper-scissors"
+                                target="_blank"
+                                class="card-link"
+                                ><i class="fab fa-w fa-github"></i
+                              ></a>
+                              <a
+                                href="https://kurtyilmaz.github.io/rock-paper-scissors/"
+                                target="_blank"
+                                class="card-link"
+                                ><i class="fas fa-external-link-alt"></i
+                              ></a>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Rock, Paper, Scissors</h5>
+                            <p class="card-text">
+                              A best-of-9 round of rock paper scissors against a
+                              computer.
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <i class="card-skill">HTML</i>
+                            <i class="card-skill">CSS</i>
+                            <i class="card-skill">JS</i>
+                            <i class="card-skill">Jest</i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col my-4 justify-content-center">
+                        <div class="card">
+                          <div class="card-header row">
+                            <div class="col card-header-icon">
+                              <i class="fas fa-wifi"></i>
+                            </div>
+                            <div class="col link-container">
+                              <a
+                                href="https://github.com/KurtYilmaz/google-homepage"
+                                target="_blank"
+                                class="card-link"
+                                ><i class="fab fa-w fa-github"></i
+                              ></a>
+                              <a
+                                href="https://kurtyilmaz.github.io/google-homepage/"
+                                target="_blank"
+                                class="card-link"
+                                ><i class="fas fa-external-link-alt"></i
+                              ></a>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Google Homepage</h5>
+                            <p class="card-text">
+                              A visual recreation of the Google Homepage
+                              (non-functioning).
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <i class="card-skill">HTML</i>
+                            <i class="card-skill">CSS</i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Odin Modal - Text -->
+                  <p>
+                    The Odin Project is an open-source curriculum for learning
+                    web development. I am following the curriculum to improve my
+                    full stack web development skills.
+                  </p>
+                  <button
+                    class="btn btn-primary mt-5"
+                    href="#"
+                    data-dismiss="modal"
+                  >
+                    <i class="fas fa-times fa-fw"></i>
+                    Close Window
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+
+    <!-- Custom scripts -->
+    <script src="js/index.js"></script>
+
+    <!-- Homepage background-->
+    <script src="js/p5.min.js"></script>
+    <script src="js/vanta.trunk.min.js"></script>
+    <script>
+      VANTA.TRUNK({
+        el: "#home",
+        color: 0xe83e8c,
+        backgroundColor: 0x2c3e50
+      });
+    </script>
+  </body>
 </html>
