@@ -1340,7 +1340,13 @@
 
     <!-- Homepage background-->
     <script src="js/p5.min.js"></script>
-    <script src="js/osc-waves.js"></script>
-    <script>parentId = "home"</script>
+    <script src="js/vanta.trunk.min.js"></script>
+    <script>
+      VANTA.TRUNK({
+        el: "#home",
+        color: 0xe83e8c,
+        backgroundColor: 0x2c3e50
+      });
+    </script>
   </body>
 </html>
