@@ -36,30 +36,35 @@
   <body id="page-top">
     <!-- Masthead -->
     <header
-      class="masthead bg-secondary text-white text-center d-flex align-items-center"
-      style="height: 100vh"
+      class="masthead bg-secondary text-white text-center align-items-center position-relative"
+      style="height: 100vh; width: 100%; padding: 0; margin: 0;"
       id="home"
     >
-      <div class="container d-flex align-items-center flex-column">
-        <!-- Masthead Heading -->
-        <div class="container" style="padding: 0;">
-          <h1 class="masthead-heading mb-0">
-            Hi, I'm
-            <span class="text-primary">Kurt Yilmaz</span>.
-          </h1>
-          <div class="divider-light"></div>
-          <h1 class="masthead-subheading mb-4">
-            I am a software engineer with experience in audio, game, embedded,
-            and Android development.
-          </h1>
-        </div>
-        <a
-          class="btn btn-xl btn-secondary btn-outline-primary font-weight-bold js-scroll-trigger"
-          id="btn-home"
-          href="#about"
+      <div class="position-absolute align-items-center justify-content-center w-100 h-100 d-flex flex-column"
+        <div
+          class="container align-items-center position-relative justify-content-center"
+          style="padding: 0; z-index: 10"
         >
-          About Me
-        </a>
+          <!-- Masthead Heading -->
+          <div class="container">
+            <h1 class="masthead-heading mb-0">
+              Hi, I'm
+              <span class="text-primary">Kurt Yilmaz</span>.
+            </h1>
+            <div class="divider-light"></div>
+            <h1 class="masthead-subheading mb-4">
+              I am a software engineer with experience in audio, game, embedded,
+              and Android development.
+            </h1>
+          </div>
+          <a
+            class="btn btn-xl btn-secondary btn-outline-primary font-weight-bold js-scroll-trigger"
+            id="btn-home"
+            href="#about"
+          >
+            About Me
+          </a>
+        </div>
       </div>
     </header>
 
@@ -659,7 +664,7 @@
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-to-top d-lg-none position-fixed ">
       <a
-        class="js-scroll-trigger d-block text-center text-white rounded"
+        class="js-scroll-trigger d-block text-center text-white rounded btn"
         href="#page-top"
       >
         <i class="fa fa-chevron-up"></i>
@@ -711,7 +716,8 @@
                   <!-- Portfolio Modal - Text -->
                   <p>
                     Awarded "Top 5" in UF ECE's design 2 competion. Click the
-                    Github link above to view more pictures, documentation, and code! <br />
+                    Github link above to view more pictures, documentation, and
+                    code! <br />
                   </p>
                   <button
                     class="btn btn-primary mt-5"
@@ -1340,13 +1346,9 @@
 
     <!-- Homepage background-->
     <script src="js/p5.min.js"></script>
-    <script src="js/vanta.trunk.min.js"></script>
+    <script src="js/osc-waves.js"></script>
     <script>
-      VANTA.TRUNK({
-        el: "#home",
-        color: 0xe83e8c,
-        backgroundColor: 0x2c3e50
-      });
+      parentId = "home";
     </script>
   </body>
 </html>
