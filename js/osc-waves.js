@@ -20,6 +20,7 @@ let animWidth;
 let cnv;
 // Variable parentId should be specified in html e.g.:
 // <script>parentId = "home"</script>
+let waveOffset = 0;
 
 function setWindow() {
   if (typeof parentId != "undefined") {
@@ -53,6 +54,7 @@ function initConstants() {
   amplitude = animHeight / 20;
   dropThreshold = 0.97 * PI;
   dx = TWO_PI * frequency * xSpacing;
+  waveOffset = animHeight / 30;
 }
 
 function timerStart() {
@@ -137,10 +139,10 @@ function calcSaw(thetaSaw) {
 }
 
 function renderWaves() {
-  renderSin(padding + amplitude, "#1abc9c");
-  renderSquare(padding + amplitude + ySpacing, "#bc1a7b");
-  renderTriangle(padding + amplitude + 2 * ySpacing, "#bc3a1a");
-  renderSaw(padding + amplitude + 3 * ySpacing, "#bc8b1a");
+  renderSin(padding + amplitude - waveOffset, "#1abc9c");
+  renderSquare(padding + amplitude + ySpacing - waveOffset, "#bc1a7b");
+  renderTriangle(padding + amplitude + 2 * ySpacing + waveOffset, "#bc3a1a");
+  renderSaw(padding + amplitude + 3 * ySpacing + waveOffset, "#bc8b1a");
 }
 
 function renderSin(y, waveColor) {
