@@ -18,7 +18,7 @@
   --pink: #bc1a7b;
   --pink-dark: #8b2554;
   --red: #dc3545;
-  --orange: #fd7e14;
+  --orange: #bc3a1a;
   --yellow: #ffc107;
   --green: #28a745;
   --teal: #1abc9c;
@@ -28,6 +28,7 @@
   --gray-dark: #343a40;
   --primary: #1abc9c;
   --secondary: #2c3e50;
+  --accent: #2e7986;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -9835,6 +9836,10 @@ a.text-secondary:focus {
   color: var(--secondary-hover) !important;
 }
 
+.text-accent {
+  color: var(--accent) !important;
+}
+
 .text-success {
   color: var(--success) !important;
 }
@@ -10213,7 +10218,7 @@ a.text-dark:focus {
 
 .portfolio {
   margin-bottom: -30px;
-  background-color: var(--pink-dark);
+  background-color: var(--accent);
 }
 
 .portfolio .portfolio-item {

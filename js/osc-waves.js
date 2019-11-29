@@ -1,9 +1,9 @@
-let xSpacing = 16; // Distance between each horizontal location
+let xSpacing; // Distance between each horizontal location
 let ySpacing; // Distance between each wave
 let waveWidth; // Width of entire wave
 let theta = 0; // Start angle at 0
 let amplitude; // Height of wave
-let frequency = 0.0033; // wave frequency
+let frequency; // wave frequency
 let dx; // Value for incrementing x
 let sinValues; // Using an array to store height values for the wave
 let padding; // Padding from top
@@ -17,6 +17,7 @@ p5.disableFriendlyErrors = true; // Performance optimization
 let animHeight;
 let animWidth;
 let cnv;
+let waveOffset;
 // The following variables should be specified in html e.g.:
 // <script> variableName="home" </script>
 // parentId
@@ -24,7 +25,6 @@ let cnv;
 // colorSquare
 // colorTri
 // colorSaw
-let waveOffset = 0;
 
 function setColors() {
   if (typeof colorSin == "undefined") {
@@ -56,19 +56,23 @@ function setWindow() {
 function setup() {
   setColors();
   setWindow();
-  initConstants();
+  setConstants();
 }
 
 function windowResized() {
-  setup();
+  setWindow();
+  setConstants();
 }
 
-function initConstants() {
+function setConstants() {
   waveWidth = width + 16;
-  ySpacing = animHeight / 4;
-  padding = animHeight / 20;
-  amplitude = animHeight / 20;
-  waveOffset = animHeight / 30;
+  xSpacing = floor(animWidth / 40);
+  pointWidth = floor(xSpacing / 3);
+  ySpacing = floor(animHeight / 4);
+  padding = floor(animHeight / 16);
+  amplitude = floor(animHeight / 20);
+  waveOffset = floor(animHeight / 32);
+  frequency = 3 / waveWidth;
   dx = TWO_PI * frequency * xSpacing;
   dropThreshold = 0.97 * PI;
   sawThreshold = 0.15 * amplitude;
@@ -153,8 +157,8 @@ function renderWaves() {
   strokeWeight(6);
   renderSin(padding + amplitude - waveOffset, colorSin);
   renderSquare(padding + amplitude + ySpacing - waveOffset, colorSquare);
-  renderTri(padding + amplitude + 2 * ySpacing + waveOffset, colorTri);
-  renderSaw(padding + amplitude + 3 * ySpacing + waveOffset, colorSaw);
+  renderTri(padding + amplitude + 2 * ySpacing + 2 * waveOffset, colorTri);
+  renderSaw(padding + amplitude + 3 * ySpacing + 2 * waveOffset, colorSaw);
 }
 
 function renderSin(y, waveColor) {
