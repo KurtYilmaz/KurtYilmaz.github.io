@@ -8,7 +8,7 @@ let dx; // Value for incrementing x
 let sinValues; // Using an array to store height values for the wave
 let padding; // Padding from top
 let renderLines = false; // flag for rendering lines between poitns
-let pointWidth = 8; // Width of the wave ellipses
+let pointWidth; // Width of the wave ellipses
 let speed = 0.02; // Speed of wave scrolling
 let dropThreshold;
 let dropSpeed = 18; // Speed of saw and square points dropping
