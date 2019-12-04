@@ -33,7 +33,7 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
 
-  <body id="page-top" class="bg-secondary">
+  <body id="page-top">
     <!-- Masthead -->
     <header
       class="masthead bg-secondary text-white text-center align-items-center position-relative w-100 h-100 p-0 m-0"
@@ -136,19 +136,21 @@
         </div>
 
         <!-- About Section Content -->
-        <div class="row">
+        <div class="row text-white">
           <div
             class="col-md-4 text-center bg-secondary shadow rounded mx-auto my-2"
           >
-            <img
-              class="masthead-avatar mx-auto mb-5 mt-5"
-              src="img/headshot.png"
-              alt="A picture of Kurt"
-            />
-            <p
-              class="lead text-justify text-white mx-auto"
-              style="max-width: 90%"
-            >
+            <picture>
+              <source srcset="img/webp/headshot.webp" type="image/webp" />
+              <source srcset="img/png/headshot.png" type="image/png" />
+              <img
+                src="img/png/headshoo.png"
+                class="masthead-avatar mx-auto mb-5 mt-5"
+                alt="A picture of Kurt"
+              />
+            </picture>
+
+            <p class="lead text-left mx-auto" style="max-width: 90%">
               I'm a recently graduated software engineer with an educational
               background in both software and hardware. Passionate for audio
               related projects, game development, and embedded devices. Budding
@@ -429,11 +431,15 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
+            <picture>
+              <source srcset="img/webp/gatorsynth3d.webp" type="image/webp" />
+              <source srcset="img/png/gatorsynth3d.png" type="image/png" />
               <img
-                class="img-fluid bg-info"
-                src="img/portfolio/gatorsynth3d.png"
+                src="img/png/gatorsynth3d.png"
+                class="img-fluid bg-secondary"
                 alt="Portfolio tile for the GatorSynth Sequencer - Kurt's senior project."
               />
+            </picture>
             </div>
           </div>
 
@@ -453,11 +459,15 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
+            <picture>
+              <source srcset="img/webp/game.webp" type="image/webp" />
+              <source srcset="img/png/game.png" type="image/png" />
               <img
-                class="img-fluid"
-                src="img/portfolio/game.png"
-                alt="Portfolio tile for game projects."
+                src="img/png/game.png"
+                class="img-fluid bg-secondary"
+                alt="Portfolio tile for games created for Harvard's CS50G."
               />
+            </picture>
             </div>
           </div>
 
@@ -501,11 +511,15 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
+              <picture>
+              <source srcset="img/webp/odin.webp" type="image/webp" />
+              <source srcset="img/png/odin.png" type="image/png" />
               <img
-                class="img-fluid"
-                src="img/portfolio/odin.png"
-                alt="Portfolio tile for web projects completed while completing the Odin Project's cirriculum."
+                src="img/png/odin.png"
+                class="img-fluid bg-secondary"
+                alt="Portfolio tile for web projects that follow Odin Projtect's cirriculum."
               />
+            </picture>
             </div>
           </div>
         </div>
@@ -639,6 +653,7 @@
               class="btn btn-outline-light btn-social mx-1"
               href="https://github.com/KurtYilmaz"
               target="_blank"
+              aria-label="Kurt's GitHub"
             >
               <i class="fab fa-fw fa-github"></i>
             </a>
@@ -646,6 +661,7 @@
               class="btn btn-outline-light btn-social mx-1"
               href="https://www.linkedin.com/in/kurtyilmaz/"
               target="_blank"
+              aria-label="Kurt's LinkedIn"
             >
               <i class="fab fa-fw fa-linkedin-in"></i>
             </a>
@@ -666,6 +682,7 @@
       <a
         class="js-scroll-trigger d-block text-center text-white rounded btn"
         href="#page-top"
+        aria-label="Scroll to top"
       >
         <i class="fa fa-chevron-up"></i>
       </a>
@@ -1336,7 +1353,7 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Homepage background-->
-    <script src="js/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5"></script>
     <script>
       parentId = "home";
       colorSin = "#2e7986";
