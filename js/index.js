@@ -81,4 +81,14 @@
     $if.attr("src", "/empty.html");
     $if.attr("src", src);
   });
+
+  $(".portfolio-modal").on("show.bs.modal", function(e) {
+    window.location.hash = "modal";
+  });
+
+  $(window).on("hashchange", function(event) {
+    if (window.location.hash != "#modal") {
+      $(".portfolio-modal").modal("hide");
+    }
+  });
 })(jQuery); // End of use strict
