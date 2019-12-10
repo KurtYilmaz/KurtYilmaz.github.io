@@ -10243,8 +10243,10 @@ a.text-dark:focus {
   background-color: rgba(26, 188, 156, 0.9);
 }
 
-.portfolio .portfolio-item .portfolio-item-caption:hover {
-  opacity: 1;
+@media(hover:hover) {
+  .portfolio .portfolio-item .portfolio-item-caption:hover {
+    opacity: 1;
+  }
 }
 
 .portfolio
