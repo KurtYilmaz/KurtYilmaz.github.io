@@ -10232,6 +10232,7 @@ a.text-dark:focus {
   margin-bottom: 30px;
   border-radius: 0.5rem;
   overflow: hidden;
+  -webkit-user-select: none;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
