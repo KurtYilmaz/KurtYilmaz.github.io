@@ -36,7 +36,7 @@
   <body id="page-top">
     <!-- Masthead -->
     <header
-      class="masthead bg-secondary text-white text-center align-items-center position-relative w-100 h-100 p-0 m-0"
+      class="masthead bg-secondary text-white text-center align-items-center position-relative vw-100 vh-100 p-0 m-0"
       id="home"
     >
       <div
@@ -55,7 +55,7 @@
             <div class="divider-light"></div>
             <h1 class="masthead-subheading mb-4">
               I am a software engineer with experience in audio, game, embedded,
-              and Android development.
+              and test development.
             </h1>
           </div>
           <a
@@ -120,11 +120,9 @@
 
     <!-- About Section -->
     <section class="page-section text-dark mb-0" id="about">
-      <div class="container mx-auto" style="min-width: 98%;">
+      <div class="container mx-auto" style="min-width: 98%">
         <!-- About Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase">
-          About
-        </h2>
+        <h2 class="page-section-heading text-center text-uppercase">About</h2>
 
         <!-- Icon Divider -->
         <div class="divider-custom divider-dark">
@@ -151,10 +149,10 @@
             </picture>
 
             <p class="lead text-left mx-auto" style="max-width: 90%">
-              I'm a recently graduated software engineer with an educational
-              background in both software and hardware. Passionate for audio
-              related projects, game development, and embedded devices. Budding
-              open source contributor. Amateur music tinkerer.<br />
+              I'm a software engineer with a background in both software and
+              hardware. Passionate for audio related projects, game development,
+              and embedded devices. Budding open source contributor. Amateur
+              music tinkerer. Mechanical keyboard enthusiast.<br />
               <a class="js-scroll-trigger font-weight-bold" href="#contact">
                 If you would like to work with me, request my resume, or just
                 say hi, feel free to send me a message!
@@ -168,13 +166,23 @@
               <div class="nav nav-tabs mx-2 my-2" id="nav-tab" role="tablist">
                 <a
                   class="nav-item nav-link active"
-                  id="nav-background-tab"
+                  id="nav-employment-tab"
                   data-toggle="tab"
-                  href="#nav-background"
+                  href="#nav-employment"
                   role="tab"
-                  aria-controls="nav-background"
+                  aria-controls="nav-employment"
                   aria-selected="true"
-                  >Background</a
+                  >Employment</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="nav-education-tab"
+                  data-toggle="tab"
+                  href="#nav-education"
+                  role="tab"
+                  aria-controls="nav-education"
+                  aria-selected="false"
+                  >Education</a
                 >
                 <a
                   class="nav-item nav-link"
@@ -199,14 +207,14 @@
                 > -->
               </div>
             </nav>
-            <div class="tab-content mx-2 my-2" id="nav-tabContent">
+            <div class="tab-content mx-2 my-3" id="nav-tabContent">
               <div
                 class="tab-pane fade text-white text-center"
                 id="nav-languages"
                 role="tabpanel"
                 aria-labelledby="nav-languages-tab"
               >
-                <div class="table-responsive mx-auto" style="max-width: 95%;">
+                <div class="table-responsive mx-auto" style="max-width: 95%">
                   <table class="table-striped table text-white">
                     <thead>
                       <tr>
@@ -216,6 +224,20 @@
                       </tr>
                     </thead>
                     <tbody>
+                      <tr>
+                        <th scope="row">Java</th>
+                        <td>Proficient</td>
+                        <td>
+                          Software testing framework (at WebstaurantStore), Android application (at Jabil), university coursework.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Groovy</th>
+                        <td>Proficient</td>
+                        <td>
+                          Software testing framework (at WebstaurantStore).
+                        </td>
+                      </tr>
                       <tr>
                         <th scope="row">C++</th>
                         <td>Proficient</td>
@@ -233,18 +255,9 @@
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">Java</th>
-                        <td>Proficient</td>
-                        <td>
-                          Android application (at Jabil), university coursework.
-                        </td>
-                      </tr>
-                      <tr>
                         <th scope="row">Lua</th>
                         <td>Competent</td>
-                        <td>
-                          Video games in LÖVE.
-                        </td>
+                        <td>Video games in LÖVE.</td>
                       </tr>
                       <tr>
                         <th scope="row">C#</th>
@@ -257,9 +270,7 @@
                       <tr>
                         <th scope="row">Assembly (MIPS/AVR)</th>
                         <td>Competent</td>
-                        <td>
-                          University coursework (embedded and on PC).
-                        </td>
+                        <td>University coursework (embedded and on PC).</td>
                       </tr>
                       <tr>
                         <th scope="row">VHDL</th>
@@ -280,9 +291,7 @@
                       <tr>
                         <th scope="row">Python 3</th>
                         <td>Familiar</td>
-                        <td>
-                          Robotics application (at Jabil). Scripting.
-                        </td>
+                        <td>Robotics application (at Jabil). Scripting.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -310,13 +319,13 @@
                 </p>
               </div> -->
               <div
-                class="tab-pane fade show active text-white text-left"
-                id="nav-background"
+                class="tab-pane fade text-white text-left"
+                id="nav-education"
                 role="tabpanel"
-                aria-labelledby="nav-background-tab"
+                aria-labelledby="nav-education-tab"
               >
                 <div class="container mx-auto my-auto">
-                  <h5 class="text-uppercase"><u>Education</u></h5>
+                  <!-- <h5 class="text-uppercase"><u>Education</u></h5> -->
                   <h6>
                     Bachelor of Science in Computer Engineering
                     <a
@@ -335,9 +344,7 @@
                       >Audio Engineering Society @ UF</a
                     >
                   </h6>
-                  <h6>
-                    Coursework:
-                  </h6>
+                  <h6>Coursework:</h6>
                   <ul>
                     <li>
                       Design 2 project: GatorSynth Step-Sequencer. Awarded "Top
@@ -352,9 +359,46 @@
                     <li>Digital Design (FPGAs).</li>
                   </ul>
                 </div>
-                <hr style="border-color: #1abc9c;" />
+              </div>
+              <div
+                class="tab-pane fade show active text-white text-left"
+                id="nav-employment"
+                role="tabpanel"
+                aria-labelledby="nav-employment-tab"
+              >
                 <div class="container mx-auto my-auto">
-                  <h5 class="text-uppercase"><u>Employment</u></h5>
+                  <!-- <h5 class="text-uppercase"><u>Employment</u></h5> -->
+                  <h6>
+                    Jr. QA Automation Engineer (SDET)
+                    <a
+                      href="https://www.webstaurantstore.com/"
+                      target="_blank"
+                      rel="noopener"
+                      >@ WebstaurantStore</a
+                    >
+                  </h6>
+                  <p>
+                    Worked with a team of software engineers to build a custom
+                    testing framework from scratch. The framework tests all
+                    areas of the runs nightly tests on all areas of the site,
+                    from back end APIs and Databases, to customer facing pages.
+                  </p>
+                  <h6>Personal Accomplishments:</h6>
+                  <ul>
+                    <li>
+                      Led development on an automated refactoring tool to port
+                      our testing software from a closed-source, "off the
+                      shelf", framework to our own custom framework.
+                    </li>
+                    <li>
+                      Personally developed the libraries for end-to-end testing
+                      our in-house APIs. This includes back-end database
+                      testing, pages on the front-end that heavily interact
+                      with the API data, and algorithms that process the API
+                      data (like search, sorting products, and filtering products).
+                    </li>
+                  </ul>
+                  <hr style="border-color: #1abc9c" />
                   <h6>
                     Hardware Innovation Group Intern
                     <a
@@ -381,9 +425,7 @@
                     and software for the team. Interned for two consecutive
                     summers.
                   </p>
-                  <h6>
-                    Personal Accomplishments:
-                  </h6>
+                  <h6>Personal Accomplishments:</h6>
                   <ul>
                     <li>
                       Published company IP in the form of an NFC Android
@@ -645,7 +687,7 @@
                   value="Send"
                   class="btn btn-default btn-outline-primary btn-xl font-weight-bold"
                   id="sendMessageButton"
-                  style="float: right;"
+                  style="float: right"
                 >
                   Send
                 </button>
@@ -688,12 +730,12 @@
     <!-- Copyright Section -->
     <section class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>&copy; Kurt Yilmaz 2019</small>
+        <small>&copy; Kurt Yilmaz 2020</small>
       </div>
     </section>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-to-top d-lg-none position-fixed ">
+    <div class="scroll-to-top d-lg-none position-fixed">
       <a
         class="js-scroll-trigger d-block text-center text-white rounded btn"
         href="#page-top"
