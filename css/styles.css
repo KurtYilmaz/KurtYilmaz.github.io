@@ -97,6 +97,11 @@ body {
   /* height: 100%; */
 }
 
+#home {
+  height: var(--windowHeight, 1vh)
+  /* height: 100vh; */
+}
+
 ::-webkit-scrollbar {
   width: 1em;
 }
